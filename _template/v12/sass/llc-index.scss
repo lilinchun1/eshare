@@ -1,0 +1,144 @@
+@charset "utf-8";
+/*! $Id$ */
+/**
+ * Created with IntelliJ IDEA. 
+ * User: llc 
+ * Date: 2014/11/26 
+ * Time: 10:48 
+ * To change this template use File | Settings | File Templates. 
+ */
+
+@import "rest";
+
+/*-----------------------index.html start----------------------*/
+
+.index-wrap{
+  @extend %wrap-100p;
+  background: $bg-colorf8f8f8;
+}
+.wd-shop-head{
+  @extend %wrap-95p;
+  height: 58px;
+  border-bottom: 1px solid $border-color;
+    h1{
+      margin-top: 6px;
+      color: $font-color333;
+      font-size: 1.6em;
+    }
+    i{
+      font-size: 1.2em;
+      color: $font-color999;
+    }
+}
+.wd-shop-head-img{
+  float: left;
+  margin: 7px 13px 0 3px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.logo-star{
+  margin-top: 20px;
+  float: right;
+  width: 14px;
+  height: 14px;
+}
+.shop-lab{
+  @extend %wrap-100p;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid #e6e6e7;
+  display: table;
+  li{
+    width: 25%;
+    float: left;
+  }
+  span{
+    float: left;
+    margin: 12px 6px 0 6px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: #000000;
+  }
+  i{
+    float: left;
+    color: $font-color999;
+    font-size: 1.2em;
+    display: inline-block;
+  }
+}
+.shop-item-wrap{
+  @extend %wrap-100p;
+
+}
+.shop-item{
+  margin-top: 8px;
+  @extend %wrap-95p;
+  background: #ffffff;
+  .shop-item-pic{
+    position: relative;
+    span{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background: #e02d2a;
+      line-height: 30px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #a51a18;
+    }
+  }
+  .shop-item-tt{
+    h2{
+      font-size: 1.4em;
+    }
+    span{
+      margin: 5px 4px 0 4px;
+      float: left;
+      width: 12px;
+      height: 12px;
+      background: #000;
+    }
+  }
+  .shop-item-buy{
+    margin-top: 10px;
+    overflow: hidden;
+    em{
+      color: $color-red;
+      font-size: 1.4em;
+    }
+    span{
+      font-size: .9em;
+    }
+    i{
+      color: $font-color999;
+      font-size: 1.2em;
+    }
+  }
+}
+.shop-item-btn{
+  margin-right: 8px;
+  float: right;
+  width: 98px;
+  @extend %btn-s;
+  background: $color-red;
+  font-family: "Microsoft YaHei";
+}
+.check-more-btn{
+  margin-top: 12px;
+  @extend %wrap-95p;
+  @extend %btn-k;
+  height: 33px;
+  display: block;
+}
+@media screen and (min-width: 768px){
+  .shop-item-btn{
+    width: 196px;
+  }
+}
+
+/*-----------------------index.html end----------------------*/

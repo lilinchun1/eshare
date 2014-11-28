@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>提现明细</title>
+    <link rel="stylesheet" href="../v12/css/index.css"/>
+</head>
+<body>
+<div class="box-wrap wrap-bg h100p">
+    <section class="apply-cash-wrap">
+        <p>
+            <em>账户余额(￥)</em> <i>9500.00</i>
+        </p>
+
+        <p>
+            <input class="apply-cash-input" type="text" name="" id="" placeholder="请填写申请提现金额"/>
+        </p>
+
+        <p>
+            <span>每月15日，25日为结算日，结算后1-2天可到账，请注意查收。</span>
+        </p>
+
+        <p>
+            <button type="button" class="draw-money-btn33" id="J_code">确定</button>
+        </p>
+    </section>
+    <div class="overlay" id="J_overlay"></div>
+    <div class="modal" id="con1">
+        <p>
+            <span class="alert-logo" id="J-alt-pic"></span>
+        </p>
+        <p id="J-alt-con">
+            申请金额不能大于账户余额
+        </p>
+
+            <button type="button" class="mode-btn" id="J_btn">确定</button>
+
+
+    </div>
+    <footer class="foot">
+        易享科技出品
+    </footer>
+</div>
+<script>
+    //altBox("111111111", 1,"http://www.baidu.com");
+    function altBox(txt, logo,Ourl) {
+        var overlay = document.getElementById("J_overlay");
+        var con1 = document.getElementById("con1");
+        var btn = document.getElementById("J_btn");
+        var altCon = document.getElementById("J-alt-con");
+        var altPic = document.getElementById("J-alt-pic");
+
+        var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+        altCon.textContent=altCon.innerText = txt;
+        switch (logo) {
+            case 1:
+                altPic.className = "alert-logo";
+                break;
+            case 2:
+                altPic.className = "alert-logo yes-logo";
+                break;
+        }
+        overlay.style.display = "block";
+        con1.style.display = "block";
+        overlay.style.height = document.body.clientHeight + scrolltop + 'px';
+
+        btn.onclick = overlay.onclick = function () {
+            overlay.style.display = "none";
+            con1.style.display = "none";
+            if(Ourl){
+                window.location.href = Ourl;
+            }
+        };
+    }
+</script>
+</body>
+</html>

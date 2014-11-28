@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<meta name="format-detection" content="telephone=no">
+<title>我的银行卡</title>
+<link rel="stylesheet" href="../v12/css/index.css"/>
+</head>
+<body>
+<div class="my-bank-alert" id="J-my-bank-alert">
+    <p>账户异常</p>
+    <p>开户人与实际不符，请重新修改银行卡！</p>
+    <div class="close">×</div>
+</div>
+<div class="box-wrap wrap-bg h100p">
+    <section class="my-bank-wrap">
+        <div class="bank-logo"><img src="../v12/img/bank1.png" alt=""/></div>
+        <p>
+            <em>詹某</em>
+        </p>
+
+        <p>
+            <em>中国广发银行</em>  储蓄卡
+        </p>
+
+        <p>
+            ************ 1586
+        </p>
+    </section>
+    <div class="bank-item-btn">
+        <button type="button" class="draw-money-btn333">修改银行卡</button>
+    </div>
+    <footer class="foot">
+        易享科技出品
+    </footer>
+</div>
+<script>
+    window.onload = function () {
+        var obox = document.getElementById("J-my-bank-alert");
+        obox.onclick = function () {
+            obox.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>密码修改成功</title>
+    <link rel="stylesheet" href="../v12/css/index.css"/>
+</head>
+<body>
+<div class="box-wrap  h100p">
+    <section class="change-bank-wrap">
+
+        <section class="change-bank-wrap">
+            <p></p>
+            <p>
+                <input class="apply-cash-input change-bank-btn" type="text" name="" id="" placeholder="张得易享旗舰店"/>
+            </p>
+            <p class="revise-shop-ps">以英文字母或汉字开头,限4-16个字符,一个汉字为2个字符。</p>
+            <section class="change-bank-attention">
+                <p>注意：店铺名称只可以修改一次，审核通过后无法再续该，请谨慎填写！审核时间为2个工作日。</p>
+            </section>
+
+
+
+        </section>
+        <button type="button" class="draw-money-btn change-bank-btn-qd" id="J_code">确 定</button>
+        <footer class="foot">
+            易享科技出品
+        </footer>
+    </section>
+</div>
+<div class="overlay" id="J_overlay"></div>
+<div class="modal" id="con1">
+    <p>
+        <span class="alert-logo yes-logo"></span>
+    </p>
+    <p>
+        已提交审核，请等待...
+    </p>
+    <p>
+        <button type="button" class="mode-btn" id="J_btn">确定</button>
+    </p>
+    <footer class="foot">
+        易享科技出品
+    </footer>
+</div>
+<script>
+    window.onload =function () {
+        var btn_text = document.getElementById("J_code");
+        var overlay = document.getElementById("J_overlay");
+        var con1 = document.getElementById("con1");
+        var btn = document.getElementById("J_btn");
+
+        btn_text.onclick = function () {
+            var scrolltop = document.documentElement.scrollTop ||document.body.scrollTop;
+            overlay.style.display = "block";
+            con1.style.display = "block";
+            overlay.style.height = document.body.clientHeight +scrolltop+'px';
+        };
+        btn.onclick = overlay.onclick = function () {
+            overlay.style.display = "none";
+            con1.style.display = "none";
+        };
+    }
+</script>
+
+</body>
+</html>

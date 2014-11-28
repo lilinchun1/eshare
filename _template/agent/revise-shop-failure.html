@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>修改店名</title>
+    <link rel="stylesheet" href="../v12/css/index.css"/>
+</head>
+<body>
+<div class="box-wrap   h100p">
+    <div class="my-bank-alert my-bank-alert2" id="J-my-bank-alert">
+        <p>店名审核未通过</p>
+        <p>原因************************</p>
+        <div class="close">×</div>
+    </div>
+
+    <section class="change-bank-wrap">
+        <p></p>
+        <p>
+            <input class="apply-cash-input change-bank-btn" type="text" name="" id="" placeholder="张得易享旗舰店"/>
+        </p>
+        <p class="revise-shop-ps">以英文字母或汉字开头,限4-16个字符,一个汉字为2个字符。</p>
+        <section class="change-bank-attention">
+            <p>注意：店铺名称只可以修改一次，审核通过后无法再续该，请谨慎填写！审核时间为2个工作日。</p>
+        </section>
+
+
+        <button type="button" class="draw-money-btn change-bank-btn-qd" id="" >确 定</button>
+    </section>
+    <script>
+        window.onload = function () {
+            var obox = document.getElementById("J-my-bank-alert");
+            obox.onclick = function () {
+                obox.style.display = "none";
+            }
+        }
+    </script>
+    <footer class="foot">
+        易享科技出品
+    </footer>
+</div>
+
+
+
+</body>
+</html>
