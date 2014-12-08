@@ -225,5 +225,101 @@
   }
 }
 
+.enshrine{
+  padding-top: 35px;
+  position: fixed;
+  top: 0;
+  @extend %wrap-100p;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  p{
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 70%;
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 1.6em;
+  }
+  span{
+    margin-right: 17px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #000000;
+    text-align: center;
+  }
+  .bgtr{
+    background-color: transparent;
+  }
+  .enshrine-btn{
+    margin: 50px auto;
+    display: block;
+    width: 128px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    @extend %btn-k;
+    border-color: #fff;
+  }
+  .heng{
+    padding: 0 6px;
+    width: 28px;
+    height: 12px;
+    display: inline-block;
+  }
+  .shu{
+    vertical-align: middle;
+    padding: 0 6px;
+    width: 12px;
+    height: 28px;
+    display: inline-block;
+  }
+  .fx-btn{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 768px){
+  .enshrine{
+    padding-top: 70px;
+    p{
+      width: 50%;
+      padding: 20px 0;
+      font-size: 3em;
+    }
+    span{
+      margin-right: 34px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    .enshrine-btn{
+      margin: 100px auto;
+      width: 256px;
+      height: 70px;
+      line-height: 70px;
+    }
+    .heng{
+      padding: 0 12px;
+      width: 56px;
+      height: 24px;
+    }
+    .shu{
+      padding: 0 12px;
+      width: 24px;
+      height: 56px;
+      display: inline-block;
+    }
+    .fx-btn{
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
 /*-----------------------index.html end----------------------*/
 
