@@ -54,6 +54,11 @@ $color-red:#e02d2a;
     font-size: 2.2em;
   }
 }
+/*加载中btn*/
+button.load-btn{
+  background: #c9c9c9;
+}
+
 /*加减数量item*/
 .select-number{
   margin: 13px 0 0 8px;
@@ -183,11 +188,13 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 }
 .mod-foot-nav{
   @extend %wrap-100p;
-  height: 50px;
+  //height: 50px;
   background: $font-color333;
   border-top: 1px solid #000;
 }
 .foot-nav-list{
+  height: 50px;
+  overflow: hidden;
   li{
     position: relative;
     float: left;
@@ -220,10 +227,19 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     display: block;
   }
   a{
+    display: block;
     color: #ffffff;
   }
   .flg-icon a{
     color: $color-red;
+  }
+}
+.search{
+  height: 50px;
+  .search-btn{
+    @extend %btn-s;
+    width: 37px;
+    height: 25px;
   }
 }
 
@@ -234,9 +250,10 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     font-size: 2em;
   }
   .mod-foot-nav{
-    height: 100px;
+    //height: 100px;
   }
   .foot-nav-list{
+    height: 100px;
     li{
       position: relative;
       font-size: 2em;
@@ -245,7 +262,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     span{
       position: absolute;
       top: 8px;
-      right: 90px;
+      right: 54px;
       width: 30px;
       height: 30px;
       line-height: 30px;
@@ -259,6 +276,50 @@ input[type="button"], input[type="submit"], input[type="reset"] {
       width: 52px;
       height: 52px;
       display: block;
+    }
+  }
+  .search{
+    height: 100px;
+    .search-btn{
+      margin-top: 20px;
+      width: 74px;
+      height: 50px;
+      line-height: 50px;
+      background: $color-red;
+    }
+    .icon-iconfont-left{
+      margin: 20px 20px 0 24px;
+      float: left;
+      fill: #535353;
+      width: 30px;
+      height: 50px;
+    }
+  }
+  .search-input-wrap{
+    position: relative;
+    margin-top: 20px;
+    margin-right: 15px;
+    float: left;
+    .search-input{
+      width: 470px;
+      height: 50px;
+      background-color: #535353;
+      border-radius: 2px;
+      border: 0 none;
+      font-size: 2em;
+      color: #ffffff;
+      font-family: "microsoft yahei";
+      text-indent: 3em;
+    }
+    .search-log{
+      padding-right: 15px;
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      width: 24px;
+      height: 24px;
+      border-right: 1px solid #fff;
+      fill: #fff;
     }
   }
 }
