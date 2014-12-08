@@ -55,11 +55,10 @@
   }
   span{
     float: left;
-    margin: 12px 6px 0 6px;
+    margin: 6px 6px 0 6px;
     width: 16px;
     height: 16px;
     display: inline-block;
-    background: #000000;
   }
   i{
     float: left;
@@ -93,9 +92,7 @@
     }
   }
   .shop-item-tt{
-    h2{
       font-size: 1.4em;
-    }
     span{
       margin: 5px 4px 0 4px;
       float: left;
@@ -108,6 +105,7 @@
     margin-top: 10px;
     overflow: hidden;
     em{
+      padding-left: 4px;
       color: $color-red;
       font-size: 1.4em;
     }
@@ -139,6 +137,761 @@
   .shop-item-btn{
     width: 196px;
   }
+  .wd-shop-head{
+    height: 116px;
+    border-bottom: 1px solid $border-color;
+    h1{
+      margin-top: 12px;
+      color: $font-color333;
+      font-size: 2.6em;
+    }
+    i{
+      font-size: 1.8em;
+      color: $font-color999;
+    }
+  }
+  .wd-shop-head-img{
+    float: left;
+    margin: 14px 26px 0 6px;
+    width: 84px;
+    height: 84px;
+  }
+  .logo-star{
+    margin-top: 40px;
+    float: right;
+    width: 28px;
+    height: 28px;
+  }
+  .shop-lab{
+    height: 80px;
+    line-height: 80px;
+    span{
+      margin: 12px 12px 0 12px;
+      width: 32px;
+      height: 32px;
+    }
+    i{
+      font-size: 2em;
+    }
+  }
+
+  .shop-item{
+    margin-top: 16px;
+    .shop-item-pic{
+      span{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 2.2em;
+      }
+    }
+    .shop-item-tt{
+        font-size: 2.2em;
+        span{
+          margin: 10px 8px 0 8px;
+          width: 24px;
+          height: 24px;
+        }
+    }
+    .shop-item-buy{
+      margin-top: 20px;
+      em{
+        padding-left: 8px;
+        font-size: 2.2em;
+      }
+      span{
+        font-size: .9em;
+      }
+      i{
+        font-size: 2em;
+      }
+    }
+  }
+  .shop-item-btn{
+    margin-right: 16px;
+    width: 196px;
+  }
+  .check-more-btn{
+    margin-top: 24px;
+    height: 66px;
+  }
 }
 
 /*-----------------------index.html end----------------------*/
+
+/*-----------------------gl 买家订单 开始----------------------*/
+/*-查看物流 logistics.html-*/
+
+
+//查看物流 顶部订单信息 begin
+.logistics-n{
+   background: url("../img/iconfont-deliver.png") no-repeat;
+  background-size: 14%;
+  margin:10px;
+  height:50px;
+  border-bottom:1px solid #d3d3d3;
+  p{
+     margin-left: 20%;
+    font-size: 1.2em;
+    line-height:180%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logistics-n{
+    background: url("../img/iconfont-deliver.png") no-repeat;
+    background-size: 10%;
+    margin:10px;
+    height:100px;
+    border-bottom:1px solid #d3d3d3;
+    p{
+      margin-left: 14%;
+      font-size: 2em;
+      line-height: 200%;
+
+    }
+  }
+}
+
+//查看物流 顶部订单信息 end
+
+//查看物流   订单 begin
+.shopping-listing{
+  margin: 10px;
+
+  h4{
+    line-height:240%;
+    font-size:1.4em;
+    line-height: 300%;
+    border-bottom:1px solid #d3d3d3;
+  }
+  .shopping-listing-box{
+    margin:10px 0px;
+
+    .slb-l{
+      width: 30%;
+      float:left;
+      img{
+        width: 80px;
+        height:80px;
+        border:1px solid #e5e5e5;
+      }
+    }
+    .slb-c{
+      width:45%;
+      float:left;
+      font-size: 1.2em;
+      span{
+        color:#e02d2a;
+      }
+    }
+    .slb-r{
+      width:25%;
+      float: right;
+      text-align: right;
+      color:#afafaf;
+      font-size: 1.2em;
+    }
+  }
+}
+.shopping-payment{
+  text-align: right;
+  border-bottom:1px solid #d3d3d3;
+  line-height: 300%;
+  margin:0px 10px;
+  font-size: 1.2em;
+    span{
+     color:#e02d2a;
+    }
+  }
+
+
+
+@media screen and (min-width: 768px) {
+  .shopping-listing{
+    margin: 10px;
+
+    h4{
+      line-height:240%;
+      font-size:2.4em;
+      line-height: 300%;
+      border-bottom:1px solid #d3d3d3;
+    }
+    .shopping-listing-box{
+      margin:10px 0px;
+
+      height: 180px;
+      .slb-l{
+        width: 30%;
+        float:left;
+
+        img{
+          width: 160px;
+          height:160px;
+          border:1px solid #e5e5e5;
+        }
+      }
+      .slb-c{
+        width:45%;
+        float:left;
+        font-size: 2em;
+        span{
+          color:#e02d2a;
+        }
+      }
+      .slb-r{
+        width:25%;
+        float: right;
+        text-align: right;
+        color:#afafaf;
+        font-size: 2em;
+      }
+    }
+  }
+  .shopping-payment{
+    text-align: right;
+    border-bottom:1px solid #d3d3d3;
+    line-height: 300%;
+    margin:0px 10px;
+    font-size: 2em;
+    span{
+      color:#e02d2a;
+    }
+  }
+
+}
+//查看物流   订单 end
+
+
+
+//查看物流 物流详情 begin
+.logistics-information{
+  margin: 10px;
+  h4{
+    line-height:240%;
+    font-size:1.4em;
+    line-height: 300%;
+    border-bottom:1px solid #d3d3d3;
+
+  }
+  ul{
+     background:url("../img/logistics-line.jpg") repeat-y;
+     margin:5%;
+
+    display: block;
+     font-size:1.2em;
+
+    li{
+      clear: both;
+        .round-f{
+           background: #94d8b6;
+          width: 16px;
+          height: 16px;
+          margin-left: -8px;
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+
+          float:left;
+          .round-small-f{
+            background: #00a150;
+            width: 10px;
+            height: 10px;
+            margin: 3px;
+            position: absolute;
+            display: block;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+          }
+        }
+      .information-f{
+        float: left;
+        margin-left:10px;
+        margin-top: -5px;
+
+        padding-bottom: 10px;
+        p{
+          color:#01a050;
+        }
+      }
+      .round-gray{
+        background: #eeeeee;
+        width: 12px;
+        height: 12px;
+        margin-left: -5px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        float:left;
+
+      }
+      .information-gray{
+        float: left;
+        margin-top: -5px;
+        margin-left:10px;
+        padding-bottom: 10px;
+        p{
+          color:#666;
+        }
+      }
+
+    }
+    p{
+      clear: both;
+      color:#a7a7a7;
+      line-height: 180%;
+      float:left;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logistics-information{
+    margin: 10px;
+    h4{
+      line-height:240%;
+      font-size:2.4em;
+      line-height: 300%;
+      border-bottom:1px solid #d3d3d3;
+
+    }
+    ul{
+      background:url("../img/logistics-line.jpg") repeat-y;
+      margin:5%;
+
+      display: block;
+      font-size:2em;
+
+      li{
+        clear: both;
+        .round-f{
+          background: #94d8b6;
+          width: 26px;
+          height: 26px;
+          margin-left: -13px;
+          -moz-border-radius: 20px;
+          -webkit-border-radius: 20px;
+          border-radius: 20px;
+          float:left;
+          .round-small-f{
+            background: #00a150;
+            width: 20px;
+            height: 20px;
+            margin: 3px;
+            position: absolute;
+            display: block;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            border-radius: 20px;
+          }
+        }
+        .information-f{
+          float: left;
+          margin-left:10px;
+
+          padding-bottom: 10px;
+          p{
+            color:#01a050;
+          }
+        }
+        .round-gray{
+          background: #eeeeee;
+          width: 20px;
+          height: 20px;
+          margin-left: -8px;
+          -moz-border-radius: 20px;
+          -webkit-border-radius: 20px;
+          border-radius: 20px;
+          float:left;
+        }
+        .information-gray{
+          float: left;
+          margin-left:10px;
+          padding-bottom: 10px;
+          p{
+            color:#666;
+          }
+        }
+
+      }
+      p{
+        clear: both;
+        color:#a7a7a7;
+        line-height: 180%;
+        float:left;
+      }
+    }
+  }
+}
+
+
+
+
+.shopping-listing-box{
+   border-bottom: 1px solid #d3d3d3;
+  height:100px;
+   .slb-l{
+     width:30%;
+     float:left;
+     img{
+       boreder:1px solid #f6f6f6;
+       widht:94%;
+       mright-right:6%;
+     }
+  }
+  .slb-c{
+   widht:45%;
+   float:left;
+    line-height: 180%;
+  }
+  .slb-r{
+    width: 25%;
+    float:right;
+  }
+}
+//查看物流 物流详情 end
+
+
+
+/*-我的订单  my-order-show.html-*/
+.order-b{
+  border-bottom: 1px solid #d3d3d3;
+  margin: 0px 10px;
+}
+.order-add{
+  font-size: 1.2em;
+  padding:10px 0;
+  line-height: 240%;
+  h4{
+    color:#333;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-add{
+    font-size: 2em;
+    padding:10px 0;
+    line-height: 240%;
+    h4{
+      color:#333;
+    }
+  }
+}
+.order-box{
+  color:#666;
+  line-height: 180%;
+  h4{
+    color:#333;
+  }
+  span{
+    color:#999;
+    margin-left: 5px;
+  }
+  i{
+    color:#e02d2a;
+    margin-left: 5px;
+  }
+  ul{
+    font-size: 1.2em;
+    padding:10px 0;
+    line-height: 240%;
+    a{
+      background: url("../img/arrow1.png") right no-repeat;
+      display: block;
+      background-size: 10%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-box{
+    color:#666;
+    line-height: 180%;
+    h4{
+      color:#333;
+    }
+    span{
+      color:#999;
+      margin-left: 5px;
+    }
+    i{
+      color:#e02d2a;
+      margin-left: 5px;
+    }
+    ul{
+      font-size: 2em;
+      padding:10px 0;
+      line-height: 240%;
+      a{
+        background: url("../img/arrow1.png") right no-repeat;
+        display: block;
+        background-size: 8%;
+      }
+    }
+  }
+
+}
+/*-订单列表  order-list.html-*/
+
+//订单头部选项卡部分
+.order-top{
+  border-bottom: 1px solid #d3d3d3;
+
+  overflow: hidden;
+  li{
+    float:left;
+    margin: 5px 0;
+    text-align: center;
+    font-size:1.2em;
+    width: 24%;
+    line-height: 240%;
+    span{
+      color:#dd2f2f;
+    }
+  }
+  .r-b{
+    border-right:1px solid #d3d3d3;
+  }
+  .r-h a{
+    color:#dd2f2f;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-top{
+    li{
+      font-size: 2em;
+    }
+  }
+}
+
+//单独订单
+.order-l-b{
+  clear: both;
+  h4{
+    background: url(../img/256-256.png) 10px no-repeat;
+    background-size: 6%;
+    margin: 0px 10px;
+    line-height: 300%;
+    font-size: 1.2em;
+    padding-left: 50px;
+    border-bottom:1px solid #d3d3d3;
+    overflow: hidden;
+    border-top:1px solid #d3d3d3;
+    display: block;
+    margin-top: 10px;
+    span{
+      float: right;
+      color:#dd2f2f;
+    }
+  }
+  .order-payment{
+    text-align: right;
+    line-height: 300%;
+    margin: 0px 10px;
+    font-size: 1.2em;
+    border-bottom:1px solid #d3d3d3;
+    i{
+      float:left;
+    }
+    span{
+      color:#dd2f2f;
+    }
+  }
+  .order-dd-button1{
+     background: #f1f1f1;
+    -moz-border-radius: 0px 0px 2px 2px;
+    -webkit-border-radius: 0px 0px 2px 2px;
+    border-radius:  0px 0px 2px 2px;
+    width: 30px;
+    height: 26px;
+    margin: 0 auto;
+    a{
+      background: url(../img/arrow2.png) no-repeat;
+      display: block;
+       background-size: 100%;
+      overflow: hidden;
+      width: 30px;
+      height: 26px;
+    }
+  }
+  .order-dd-button2{
+    background: #f1f1f1;
+    -moz-border-radius: 0px 0px 2px 2px;
+    -webkit-border-radius: 0px 0px 2px 2px;
+    border-radius:  0px 0px 2px 2px;
+    width: 30px;
+    height: 26px;
+    margin: 0 auto;
+    a{
+      background: url(../img/arrow3.png) no-repeat;
+      display: block;
+      background-size: 100%;
+      overflow: hidden;
+      width: 30px;
+      height: 26px;
+    }
+  }
+}
+.gl-btn-k1{
+  height: 34px;
+  line-height: 34px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-align: center;
+  color: $font-color666;
+  font-size: 1.4em;
+  width: 20%;
+  margin: 2%;
+  float: right;
+  background-color: transparent;
+  border: 1px solid $font-color999;
+}
+.gl-btn-k2{
+  height: 34px;
+  line-height: 34px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-align: center;
+  color: #dd2f2f;
+  font-size: 1.4em;
+  width: 20%;
+  margin: 2%;
+  float: right;
+  background-color: transparent;
+  border: 1px solid #dd2f2f;
+}
+.order-button-b{
+  overflow: hidden;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .order-l-b{
+    clear: both;
+    h4{
+      background: url(../img/256-256.png) 10px no-repeat;
+      background-size: 3%;
+      margin: 0px 10px;
+      line-height: 300%;
+      font-size: 2em;
+      padding-left: 50px;
+      border-bottom:1px solid #d3d3d3;
+      overflow: hidden;
+      border-top:1px solid #d3d3d3;
+      display: block;
+      margin-top: 10px;
+      span{
+        float: right;
+        color:#dd2f2f;
+      }
+    }
+    .order-payment{
+
+      margin: 0px 10px;
+      font-size: 2em;
+      border-bottom:1px solid #d3d3d3;
+
+    }
+    .order-dd-button1{
+
+      width: 50px;
+      height: 40px;
+      margin: 0 auto;
+      a{
+
+        width: 50px;
+        height: 40px;
+      }
+    }
+    .order-dd-button2{
+
+      width: 50px;
+      height: 40px;
+      margin: 0 auto;
+      a{
+
+        width: 50px;
+        height: 40px;
+      }
+    }
+  }
+  .gl-btn-k1{
+    height: 54px;
+    line-height: 54px;
+    font-size: 2em;
+
+  }
+  .gl-btn-k2{
+    height: 54px;
+    line-height: 54px;
+    font-size: 2em;
+
+  }
+}
+
+//用户中心
+.user-bg{
+  background: #f6f6f6;
+  display: block;
+  .user-top{
+    background: #dd2f2f;
+    height: 80px;
+    width: 100%;
+    p{
+      text-align: center;
+    }
+    img{
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      margin: 0 auto;  vertical-align:middle;
+      border: 3px solid #fff;
+    }
+  h1{
+    text-align: center;
+    line-height: 300%;
+    color:#fff;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  }
+}
+.user-list{
+  margin: 45px 10px 0px 10px;
+
+  li{
+    line-height: 400%;
+    font-size: 1.2em;
+    width: 100%;
+    border-bottom:1px solid #d3d3d3;
+    span{
+      border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      background: #dd2f2f;
+      color:#fff;
+      width: 20px;
+      height: 20px;
+      padding:0px 5px;
+      margin-left: 15px;
+    }
+    img{
+      width: 8%;
+      padding-top: 12px;
+      float:left;
+      margin-right: 15px;
+    }
+    a{
+      background: url("../img/arrow1.png") right no-repeat;
+      background-size: 10%;
+      width: 100%;
+      display: block;
+    }
+  }
+}

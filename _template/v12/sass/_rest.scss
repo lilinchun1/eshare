@@ -52,6 +52,53 @@ $color-red:#e02d2a;
     font-size: 2.2em;
   }
 }
+/*加减数量item*/
+.select-number{
+  margin: 13px 0 0 8px;
+  float: left;
+  width: 88px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid $border-color;
+  font-size: 1.4em;
+  span{
+    width: 24px;
+    height: 25px;
+    float: left;
+  }
+  .left{
+    border-right: 1px solid $border-color;
+  }
+  .right{
+    border-left: 1px solid $border-color;
+  }
+  .select-number-input{
+    float: left;
+    width: 38px;
+    height: 25px;
+    border: 0 none;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px){
+  .select-number{
+    margin: 26px 0 0 16px;
+    width: 178px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2.2em;
+    span{
+      width: 48px;
+      height: 50px;
+    }
+    .select-number-input{
+      width: 76px;
+      height: 50px;
+    }
+  }
+}
+
 /*-----------------------public end----------------------*/
 
 
