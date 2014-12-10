@@ -473,3 +473,14 @@
   }
 }
 /*-----------------------index-null.html end----------------------*/
+
+/*-----------------------index-show.html start----------------------*/
+.index-show-wrap{
+  @extend %wrap-100p;
+}
+.index-show-head{
+  @extend %wrap-100p;
+  height: 42px;
+  border-bottom: 1px solid $border-color;
+}
+/*-----------------------index-show.html end----------------------*/

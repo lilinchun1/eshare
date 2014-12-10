@@ -14,7 +14,9 @@ body{
 }
 /*-----------------------gl 买家订单 开始----------------------*/
 /*-查看物流 logistics.html-*/
+.logistics-box{
 
+}
 
 //查看物流 顶部订单信息 begin
 .logistics-n{
@@ -160,12 +162,19 @@ body{
 //查看物流 物流详情 begin
 .logistics-information{
   margin: 10px;
+
   h4{
     line-height:240%;
     font-size:1.4em;
     line-height: 300%;
     border-bottom:1px solid #d3d3d3;
 
+  }
+  .logistics-ps{
+    clear: both;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    color:#999;
   }
   ul{
     background:url("../img/logistics-line.jpg") repeat-y;
@@ -242,6 +251,12 @@ body{
 @media screen and (min-width: 768px) {
   .logistics-information{
     margin: 10px;
+    .logistics-ps{
+      clear: both;
+
+      padding: 5px 10px;
+      font-size: 2em;
+    }
     h4{
       line-height:240%;
       font-size:2.4em;
@@ -316,6 +331,7 @@ body{
       }
     }
   }
+
 }
 
 
@@ -428,6 +444,12 @@ body{
 /*-订单列表  order-list.html-*/
 
 //订单头部选项卡部分
+.order-button{
+  width: 100%;
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
 .order-top{
   border-bottom: 1px solid #d3d3d3;
 
@@ -462,6 +484,7 @@ body{
 //单独订单
 .order-l-b{
   clear: both;
+  overflow: hidden;
   h4{
     background: url(../img/256-256.png) 10px no-repeat;
     background-size: 6%;
@@ -492,6 +515,7 @@ body{
       color:#dd2f2f;
     }
   }
+
   .order-dd-button1{
     background: #f1f1f1;
     -moz-border-radius: 0px 0px 2px 2px;
@@ -848,10 +872,11 @@ body{
 .collection-box{
 
   margin: 0px 10px;
-
+  overflow: hidden;
   li{
     float:left;
     width: 100%;
+
   }
 }
 .collection-box-dp{
@@ -881,7 +906,7 @@ body{
   .dp-stars{
     float:right;
     width: 10%;
-    padding-top: 30px;
+    padding-top: 10px;
     img{
       width: 60%;
       text-align: right;
@@ -900,7 +925,7 @@ body{
   .collection-box-dp{
     font-size: 2.4em;
 
-    line-height: 100px;
+    line-height: 120px;
     .dp-photo{
       float:left;
       width: 75%;
@@ -922,6 +947,7 @@ body{
     .dp-stars{
       float:right;
       width: 10%;
+      padding-top: 20px;
       img{
         width: 40%;
         text-align: right;
