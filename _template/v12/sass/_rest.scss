@@ -307,6 +307,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 }
 .mod-foot-nav{
   position: fixed;
+  z-index: 9;
   bottom: 0;
   @extend %wrap-100p;
   height: 50px;
@@ -530,6 +531,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 /*-----------------------aside-item start----------------------*/
 .aside-item{
   position: fixed;
+  z-index: 9;
   right: 0;
   top: 50%;
   width: 32px;

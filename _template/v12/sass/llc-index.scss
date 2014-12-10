@@ -351,8 +351,15 @@
     margin-left: -40px;
     width: 80px;
     height: 80px;
+    border-radius: 4px;
     background: rgba(0,0,0,0.8);
     font-size: 1em;
+  }
+  p{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
   }
 }
 /*加载动画*/
@@ -408,7 +415,61 @@
        -webkit-transform: scaleY(1.0);
      }
 }
-.a111{
-  width: 100px;
+
+@media screen and (min-width: 768px){
+  .show-more{
+    .loading{
+      top: 76px;
+      left: 50%;
+      margin-left: -80px;
+      width: 160px;
+      height: 160px;
+      font-size: 2em;
+    }
+    p{
+      margin-top: 10px;
+    }
+  }
+  .spinner {
+    margin: 30px auto 0 auto;
+    width: 100px;
+    height: 60px;
+  }
 }
 /*-----------------------index-add.html end----------------------*/
+
+/*-----------------------index-null.html end----------------------*/
+.show-null{
+  @extend %wrap-100p;
+  height: 63vh;
+  .iconfont-iconfontlist{
+    position: relative;
+    top: 18px;
+    left: 50%;
+    margin-left: -45px;
+    width: 90px;
+    height: 90px;
+    fill: #b2b1b2;
+  }
+  p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .show-null{
+    .iconfont-iconfontlist{
+      top: 36px;
+      margin-left: -90px;
+      width: 180px;
+      height: 180px;
+    }
+    p{
+      margin-top: 40px;
+      font-size: 2.4em;
+    }
+  }
+}
+/*-----------------------index-null.html end----------------------*/
