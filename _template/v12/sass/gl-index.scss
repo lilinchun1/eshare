@@ -818,3 +818,524 @@ body{
     }
   }
 }
+//用户中心-我的收藏
+
+//用户中心-我的收藏-店铺
+.collection-top{
+  font-size: 1.2em;
+  line-height: 300%;
+  display: block;
+  overflow: hidden;
+  border-bottom:1px solid #d3d3d3;
+  li{
+    width: 49%;
+    float: left;
+    text-align: center;
+    margin: 5px 0;
+    span{
+      color:#dd2f2f;
+    }
+  }
+  .collection-top-color{
+    color:#dd2f2f;
+  }
+  .collection-top-lb{
+    border-right:1px solid #d3d3d3;
+    display: block;
+    overflow: hidden;
+  }
+}
+.collection-box{
+
+  margin: 0px 10px;
+
+  li{
+    float:left;
+    width: 100%;
+  }
+}
+.collection-box-dp{
+  border-bottom:1px solid #d3d3d3;
+  font-size: 1.6em;
+  overflow:hidden;
+  display: block;
+  line-height: 70px;
+  .dp-photo{
+    float:left;
+    width: 75%;
+    img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border: 3px solid #fff;
+      margin: 5px 0px;
+      float:left;
+    }
+    span{
+      float:left;
+      padding-left: 10px;
+    }
+  }
+  .dp-stars{
+    float:right;
+    width: 10%;
+    padding-top: 30px;
+    img{
+      width: 60%;
+      text-align: right;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .collection-top{
+    font-size: 2em;
+  }
+  .collection-box{
+
+    margin: 0px 10px;
+
+  }
+  .collection-box-dp{
+    font-size: 2.4em;
+
+    line-height: 100px;
+    .dp-photo{
+      float:left;
+      width: 75%;
+      img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border: 3px solid #fff;
+        margin: 5px 0px;
+        float:left;
+      }
+      span{
+        float:left;
+        padding-left: 10px;
+      }
+    }
+    .dp-stars{
+      float:right;
+      width: 10%;
+      img{
+        width: 40%;
+        text-align: right;
+      }
+    }
+  }
+}
+
+//用户中心-我的收藏-买家
+.collection-sp{
+  margin:0px 10px;
+
+  li{
+    overflow: hidden;
+    display: block;
+    border-bottom:1px solid #d3d3d3;
+  }
+  .sp-photo{
+    float:left;
+    width: 85%;
+    img{
+      width: 70px;
+      background: #fff;
+      height: 70px;
+      border: 1px solid  #d3d3d3;
+      float: left;
+      padding:2px;
+      margin: 5px 0;
+
+    }
+    .sp-photo-name{
+      float:left;
+      width: 60%;
+      margin-left: 5px;
+      h4{
+        font-size: 1.4em;
+        height: 40px;
+        overflow: hidden;
+        line-height: 40px;
+      }
+      p{
+        color:#999;
+        line-height: 150%;
+        font-size: 1.2em;
+      }
+    }
+  }
+  .dp-stars{
+    float:right;
+    width: 10%;
+    padding-top:30px;
+    img{
+      width: 60%;
+      text-align: right;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .collection-sp{
+    margin:0px 10px;
+
+    .sp-photo{
+      float:left;
+      width: 85%;
+      img{
+        width:120px;
+        background: #fff;
+        height: 120px;
+        border: 1px solid  #d3d3d3;
+        float: left;
+        padding:2px;
+        margin: 10px 0;
+
+      }
+      .sp-photo-name{
+        float:left;
+        width: 60%;
+        margin-left: 5px;
+        h4{
+          font-size: 2.4em;
+          height: 60px;
+          overflow: hidden;
+          line-height: 60px;
+        }
+        p{
+          color:#999;
+          line-height: 150%;
+          font-size: 2em;
+        }
+      }
+    }
+    .dp-stars{
+      float:right;
+      width: 10%;
+      padding-top:50px;
+      img{
+        width: 40%;
+        text-align: right;
+      }
+    }
+  }
+}
+.collection-none{
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.4em;
+  color:#999;
+  img{
+    width: 30%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .collection-none {
+    font-size: 2em;
+    img {
+      width: 20%;
+    }
+  }
+}
+//用户中心-我的收藏-地址
+.add{
+  margin: 0px 10px;
+  h4{
+    line-height: 300%;
+    font-size: 1.4em;
+    border-bottom: 1px solid  #d3d3d3;
+    overflow: hidden;
+    display: block;
+  }
+  .add-box-box{
+     border-bottom: 1px solid  #d3d3d3;
+     padding: 5px 0px;
+    overflow: hidden;
+
+    display: block;
+    .add-box-l{
+      width: 10%;
+      height:100%;
+      float:left;
+      overflow: hidden;
+      display: block;
+      img{
+        width: 60%;
+        margin-top: 20px;
+      }
+    }
+    .add-box-c{
+      width: 76%;
+      float:right;
+      font-size: 1.2em;
+      line-height: 180%;
+      span{
+        color:#999;
+        padding-right: 10px;
+      }
+    }
+    .add-box-r{
+      width:10%;
+       float: right;
+      a{
+        margin: 7px 0px;
+        img{
+          width: 60%;
+          padding: 3px 0;
+        }
+      }
+    }
+  }
+
+}
+.user-add{
+  @extend %btn-s;
+  width: 94%;
+  margin: 3%;
+  background:#e02d2a ;
+  border: 0;
+}
+@media screen and (min-width: 768px) {
+  .add{
+    margin: 0px 10px;
+    overflow: hidden;
+    display: block;
+    padding-bottom:20px;
+    h4{
+      font-size: 2.4em;
+    }
+    .add-box-box{
+      .add-box-l{
+        width: 10%;
+        height:100%;
+        float:left;
+        overflow: hidden;
+        display: block;
+        img{
+          width: 40%;
+          margin-top: 25px;
+        }
+      }
+      .add-box-c{
+        font-size: 2em;
+        span{
+          color:#999;
+          padding-right: 20px;
+        }
+      }
+      .add-box-r{
+        width:10%;
+        float: right;
+        a{
+          margin: 7px 0px;
+          display: block;
+          img{
+            width: 30%;
+            padding: 1px 0;
+          }
+        }
+      }
+    }
+  }
+  .user-add{
+    @extend %btn-s;
+    background:#e02d2a ;
+    width: 98%;
+    width: 98%;
+    border: 0;
+    margin:1%;
+
+  }
+}
+
+.add-add{
+  padding: 4px 0px;
+  margin:4px 0px;
+  overflow: hidden;
+  font-size: 1.2em;
+  color:#666;
+  display: block;
+  clear: both;
+  .add-l{
+    width: 30%;
+    float:left;
+    font-size: 1.2em;
+    line-height: 30px;
+
+  }
+  .add-r{
+    width: 69%;
+    float:left;
+    font-size: 1.2em;
+    .add-srk{
+      @extend %input-text;
+      width: 100%;
+      color:#999;
+      font-size: 1.2em;
+    }
+    textarea{
+      border: 1px solid $border-color;
+      font-size: 1.2em;
+      text-indent: 8px;
+      padding: 5px 0;
+      color:#999;
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .add-add{
+    padding: 8px 0px;
+    margin:8px 0px;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    .add-l{
+      width: 30%;
+      float:left;
+      color:#666;
+      font-size: 2em;
+      line-height: 60px;
+
+    }
+    .add-r{
+      width: 69%;
+      float:left;
+      font-size: 1.6em;
+      .add-srk{
+
+      }
+      textarea{
+        border: 1px solid $border-color;
+        font-size: 1.6em;
+        text-indent: 8px;
+        padding: 5px 0;
+        color:#999;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+/*checkbox */
+input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background: image-url("checked.png") 0 0 no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+@media screen and (min-width: 768px){
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+}
+/*select 下拉框*/
+.select-wrap {
+  position: relative;
+  margin-bottom: 8px;
+  display: block;
+  height: 30px;
+  width: 100%;
+  float:left;
+  overflow: hidden;
+  border: 1px solid $border-color;
+  font-size: 1.4em;
+  background: #fff;
+  .select-draw-con{
+    position: absolute;
+    font-size: 1em;
+    z-index: 2;
+    width: 100%;
+    height: 30px;
+    color: #999;
+    text-indent: 1em;
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .logo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    background: #f9f9f9;
+  }
+  .icon-arrow-down{
+    margin: 6px 0 0 6px;
+    width: 20px;
+    height: 20px;
+    fill: #bcbcbd;
+  }
+}
+@media screen and (min-width: 768px){
+  .select-wrap {
+    height: 60px;
+    .select-draw-con {
+      height: 60px;
+      font-size: 1.4em;
+      color:#999;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+    }
+    .icon-arrow-down{
+      margin: 12px 0 0 12px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.ticket-b{
+  padding: 6px 0px;
+  margin:6px 0px;
+  overflow: hidden;
+  font-size: 1.2em;
+  color:#666;
+  display: block;
+  span{
+    margin: 0px 5px;
+  }
+}
+@media screen and (min-width: 768px){
+  .ticket-b{
+    padding: 8px 0px;
+    margin:8px 0px;
+    overflow: hidden;
+    font-size: 2em;
+    color:#666;
+    display: block;
+    span{
+      margin: 0px 5px;
+    }
+  }
+}
