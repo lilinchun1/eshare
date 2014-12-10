@@ -13,8 +13,74 @@
 <body>
 <div class="index-show-wrap">
     <header class="index-show-head">
-
+        <img src="../v12/img/head-pic.jpg" class="index-show-head-pic" alt=""/>
+        <h1>Angle Baby 微代小店</h1>
     </header>
+    <section class="show-slider">
+        <div class="slide" id="slide3">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../v12/img/item-pic.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../v12/img/item-pic.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../v12/img/item-pic.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../v12/img/item-pic.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="dot">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="tejia">
+                特价
+            </div>
+        </div>
+    </section>
+    <section class="product-tt">
+        <span></span>
+        <h2>正品大连刺参新玉麟入  味海参高压煨参/深海底播野生辽参包邮参高压煨参/深海底播</h2>
+        <svg class="product-tt-logo-star"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontfavor"></use></svg>
+        <!--<svg class="product-tt-logo-star"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-favorfill"></use></svg> 点击后变实心的图片-->
+    </section>
+    <section class="choose-number">
+        <div class="jiage">
+            现价：￥980.00 原价：￥1280.00
+            <!--llcly 待续-->
+        </div>
+    </section>
+    <section class="enter-shop">
+        <a href="">
+            <svg class="icon-iconfont-iconfontshop"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontshop"></use></svg>AngleBaby 微代 <span>进入店铺 <svg class="icon-iconfont-right"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-right"></use></svg></span>
+        </a>
+    </section>
 </div>
+<script src="../v12/js/zepto.min.js"></script>
+<script src="../v12/js/swipeSlide.min.js"></script>
+<script>
+    $(function(){
+        $('#slide3').swipeSlide({
+            continuousScroll:true,
+            speed : 3000,
+            transitionType : 'cubic-bezier(0.22, 0.69, 0.72, 0.88)'
+        },function(i){
+            $('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+        });
+    });
+</script>
 </body>
 </html>
