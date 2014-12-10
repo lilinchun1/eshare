@@ -298,7 +298,7 @@ option {
   width: 26px;
   line-height: 26px;
   float: left;
-  border: 1px #999 solid;
+  border: 1px #d8d8d8 solid;
   text-align: center; }
 
 .cart_char_4_1 {
@@ -336,14 +336,15 @@ option {
 
 .cart_char_text_1 {
   font-size: 1.2em;
-  line-height: 31px;
+  line-height: 30px;
   color: #999;
-  width: 100%;
-  height: 31px;
+  height: 30px;
   float: left;
+  width: 99%;
   background: #fff;
-  border: none;
-  padding-left: 1px; }
+  padding-left: 1px;
+  border: 1px solid #d8d8d8;
+}
 
 .cart_char_sel {
   display: block;
@@ -367,7 +368,7 @@ option {
   width: 67%;
   display: block;
   height: 32px;
-  border: 1px solid #999;
+
   overflow: hidden; }
 
 .cart_char_selBox img {
@@ -379,7 +380,7 @@ option {
   width: 76%;
   display: block;
   height: 34px;
-  border: 1px solid #999;
+  border: 1px solid #d8d8d8;
   overflow: hidden; }
 
 .cart_char_selBox_1 img {
@@ -404,7 +405,7 @@ option {
   width: 99%;
   float: left;
   margin: 0 auto;
-  border: 1px solid #999;
+  border: 1px solid #d8d8d8;
   color: #999;
   height: 75px; }
 
@@ -478,7 +479,7 @@ option {
   color: #666;
   font-size: 1.4em;
   background-color: transparent;
-  border: 1px solid #999;
+  border: 1px solid #d8d8d8;
   margin-top: 40px; }
 
 /*---------------------重新付款------------------------*/
@@ -516,7 +517,7 @@ option {
   color: #666;
   font-size: 1.4em;
   background-color: transparent;
-  border: 1px solid #999; }
+  border: 1px solid #d8d8d8; }
 
 .paym_char {
   float: left;
@@ -551,13 +552,20 @@ option {
   text-align: center;
   font-size: 1em; }
 
-@media screen and (max-width: 640px) {
+
+
+.botton{
+  margin-top: 10px;
+  margin-bottom:60px;
+}
+
+@media screen and (max-width: 768px) {
   .bill_1 p {
     width: 200px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; } }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .cart_char_0 {
     margin-top: 12px;
     padding-bottom: 12px; }
@@ -685,8 +693,8 @@ option {
     height: 62px; }
 
   .cart_char_text_1 {
-    line-height: 62px;
-    height: 62px;
+    line-height: 60px;
+    height: 60px;
     font-size: 2em; }
 
   .cart_button a {
@@ -746,4 +754,11 @@ option {
 
   .cart_char_4 div {
     width: 52px;
-    line-height: 52px; } }
+    line-height: 52px; }
+  .botton{
+
+    margin-bottom:110px;
+  }
+}
+/*-----------------------侧面浮动----------------------*/
+

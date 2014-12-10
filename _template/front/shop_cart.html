@@ -9,6 +9,7 @@
 <meta name="format-detection" content="telephone=no">
 <title>购物车</title>
     <link rel="stylesheet" href="../v12/css/cy-index.css"/>
+    <link rel="stylesheet" href="../v12/css/llc-index.css"/>
 </head>
 <body>
 
@@ -112,8 +113,8 @@
         <div class="cart_char_7">发票</div>
         <div class="cart_char_text">
             <div class="cart_input">
-                <input type="radio" name="a" checked>个人<br>
-                <input type="radio" name="a" >企业<br>
+                <input type="checkbox" name="a" checked>个人<br>
+                <input type="checkbox" name="a" >企业<br>
             </div>
             <div style="overflow:hidden; padding: 0;margin: 0; width: 100%;margin-bottom: 10px;">
                 <span class="cart_char_text_char">企业名称:</span>
@@ -126,13 +127,17 @@
                 <div class="cart_char_text_char">商品类型:</div>
                 <div class="cart_char_selBox">
 
-                    <select name="unit" class="cart_char_sel">
-                        <option>请选择</option>
-                        <option>01单元</option>
-                        <option>02单元</option>
-                        <option>03单元</option>
-                    </select>
-                    <img src="../v12/img/arrow2.png">
+                    <div class="select-wrap register-select" style="width: 99%;">
+                        <select name="unit" class="cart_char_sel">
+                            <option>请选择</option>
+                            <option>01单元</option>
+                            <option>02单元</option>
+                            <option>03单元</option>
+                        </select>
+                        <div class="logo">
+                            <svg class="icon-arrow-down"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-arrow-down"></use></svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,6 +152,57 @@
         <a class="orange" href="#">支付宝安全支付</a>
         <a class="green" href="#">微信安全支付</a>
     </div>
-    <div style="text-align: center;font-size: 1em;color:#999;margin :20px 0;">易享科技</div>
+    <div style="text-align: center;font-size: 1em;color:#999;" class="botton">易享科技</div>
+    <!--底部导航 开始-->
+    <div class="mod-foot-nav" id="ftsh">
+        <ul class="foot-nav-list"  id="ftsh1">
+            <li>
+                <a href="#ftsh">
+                    <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontsearch"></use></svg>
+                    搜 索
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfonthome"></use></svg>
+                    首 页
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontmy"></use></svg>
+                    用户中心
+                </a>
+                <span>77</span>
+            </li>
+            <li class="flg-icon">
+                <a href="">
+                    <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontcart"></use></svg>
+                    购物车
+                </a>
+                <span>12</span>
+            </li>
+        </ul>
+        <div class="search" id="ftsh1">
+            <a href="#ftsh1"><svg class="icon-iconfont-left"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-left"></use></svg></a>
+            <div class="search-input-wrap">
+                <input class="search-input" placeholder="搜索您想要的商品" type="text"/>
+                <svg class="search-log"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontsearch"></use></svg>
+            </div>
+            <button class="search-btn">搜索</button>
+        </div>
+    </div>
+    <ul class="aside-item">
+        <li>
+            <svg class="aside-item-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontmessage"></use></svg>
+        </li>
+        <li>
+            <svg class="aside-item-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontphone"></use></svg>
+        </li>
+        <li>
+            <svg class="aside-item-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-up"></use></svg>
+        </li>
+
+    </ul>
 </body>
 </html>
