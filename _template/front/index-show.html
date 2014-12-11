@@ -59,18 +59,150 @@
     </section>
     <section class="choose-number">
         <div class="jiage">
-            现价：￥980.00 原价：￥1280.00
-            <!--llcly 待续-->
+            <span class="label-info">现价：</span>
+            <em>￥980.00 </em>
+            <i>原价：￥1280.00</i>
+        </div>
+        <div class="choose-standard">
+            <span class="label-info">规格：</span>
+            <ul class="choose-standard-list">
+                <li class="choose-active">
+                    <b></b>
+                    <a href="">12根</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a href="">12根</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a href="">12根</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a href="">12根</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a href="">12根</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a href="">12根</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a href="">12根</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a href="">12根</a>
+                </li>
+                <li>
+                    <b></b>
+                    <a href="">12根</a>
+                </li>
+            </ul>
+        </div>
+        <div class="choose-number-item">
+            <span class="label-info">数量：</span>
+            <div class="select-number">
+                <span class="left" id="teambuy_num_left">-</span>
+                <input class="select-number-input" type="text" name="" id="teambuy_num_input"  value="1" oninput="teambuy_num_input(this)"/>
+                <span class="right" id="teambuy_num_right">+</span>
+            </div>
         </div>
     </section>
-    <section class="enter-shop">
+    <section class="enter-shop wrap95">
         <a href="">
             <svg class="icon-iconfont-iconfontshop"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontshop"></use></svg>AngleBaby 微代 <span>进入店铺 <svg class="icon-iconfont-right"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-right"></use></svg></span>
         </a>
     </section>
+    <section class="tab-show">
+        <ul class="tab-nav js-tab-header">
+            <li class="cur">商品介绍</li>
+            <li>参数</li>
+        </ul>
+        <ul class="tab-body js-tab-body">
+            <li>
+                <img src="../v12/img/item-pic.jpg" alt=""/>
+                <img src="../v12/img/item-pic.jpg" alt=""/>
+            </li>
+            <li>
+                <p>　　
+                道可道也，非恒道也。名可名也，非恒名也。无名，万物之始也；有名，万物之母也。故恒无欲也，以观其眇；恒有欲也，以观其所徼。两者同出，异名同谓。玄之又玄，众眇之门。
+                </p>
+            </li>
+
+        </ul>
+    </section>
+    <footer class="footer">
+        易享科技出品
+    </footer>
 </div>
+<!--底部导航 开始-->
+<div class="mod-foot-nav" id="ftsh">
+    <ul class="foot-nav-list"  id="ftsh1">
+        <li>
+            <a href="#ftsh">
+                <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontsearch"></use></svg>
+                搜 索
+            </a>
+        </li>
+        <li class="flg-icon">
+            <a href="">
+                <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfonthome"></use></svg>
+                首 页
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontmy"></use></svg>
+                用户中心
+            </a>
+            <span>77</span>
+        </li>
+        <li>
+            <a href="">
+                <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontcart"></use></svg>
+                购物车
+            </a>
+            <span>12</span>
+        </li>
+    </ul>
+    <div class="search" id="ftsh1">
+        <a href="#ftsh1"><svg class="icon-iconfont-left"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-left"></use></svg></a>
+        <div class="search-input-wrap">
+            <input class="search-input" placeholder="搜索您想要的商品" type="text"/>
+            <svg class="search-log"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontsearch"></use></svg>
+        </div>
+        <button class="search-btn">搜索</button>
+    </div>
+</div>
+<!--底部导航 结束-->
+<!--侧边栏 开始-->
+<ul class="aside-item">
+    <li>
+        <svg class="aside-item-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontmessage"></use></svg>
+    </li>
+    <li>
+        <svg class="aside-item-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontphone"></use></svg>
+    </li>
+    <li>
+        <svg class="aside-item-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-up"></use></svg>
+    </li>
+</ul>
+<!--侧边栏 结束-->
 <script src="../v12/js/zepto.min.js"></script>
 <script src="../v12/js/swipeSlide.min.js"></script>
+<script src="../v12/js/zepto.tab-min.js"></script>
+<script>
+    $(function () {
+        $(".tab-show").tab({
+            touchAnimation: true
+        });
+    });
+</script>
 <script>
     $(function(){
         $('#slide3').swipeSlide({

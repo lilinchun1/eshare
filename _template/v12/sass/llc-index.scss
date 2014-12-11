@@ -627,8 +627,103 @@
 
 .choose-number{
   @extend %wrap-95p;
-  margin: 30px 0;
+  .jiage{
+    height: 50px;
+    line-height: 50px;
+    em{
+      font-size: 1.6em;
+      color: $color-red;
+    }
+    i{
+      font-size: 1em;
+      color: $font-color999;
+    }
+  }
+  .label-info{
+    font-size: 1.4em;
+    float: left;
+  }
+  .choose-number-item{
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+}
+.choose-standard{
+  margin-bottom: 12px;
+  overflow: hidden;
+  .choose-standard-list{
+    width: 84%;
+    float: left;
+    li{
+      margin: 0 5px 5px 0;
+      float: left;
+      position: relative;
+      width: 44px;
+      height: 22px;
+      line-height: 22px;
+      border: 1px solid $border-color;
+      text-align: center;
+      font-size: 1.2em;
+    }
+    b{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 14px;
+      height: 14px;
 
+    }
+    .choose-active{
+      border: 1px solid $color-red;
+      b{
+        background: url(../img/active-log.png) 0 0 no-repeat;
+        -webkit-background-size: 14px auto;
+        background-size: 14px auto;
+      }
+    }
+
+  }
+}
+.wrap95{
+  @extend %wrap-95p;
+}
+.tab-show{
+  @extend %wrap-95p;
+  .js-tab {
+    overflow: hidden
+  }
+  .js-tab-header {
+    overflow: hidden
+  }
+  .js-tab-header-li {
+    float: left
+  }
+  .js-tab-body {
+    padding: 5px 0;
+    overflow: hidden;
+    margin: auto
+  }
+  .js-tab-body-li {
+    float: left
+  }
+  .tab-nav{
+    height: 30px;
+    border-bottom: 1px solid $border-color;
+    li{
+      margin: 5px 0;
+      width: 49%;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      font-size: 1.4em;
+      &:nth-of-type(1){
+        border-right: 1px solid $border-color;
+      }
+    }
+    .cur{
+      color: $color-red;
+    }
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -705,5 +800,70 @@
       height: 44px;
     }
   }
+
+  .choose-number{
+    .jiage{
+      height: 100px;
+      line-height: 100px;
+      em{
+        font-size: 3em;
+      }
+      i{
+        font-size: 1.8em;
+        color: $font-color999;
+      }
+    }
+    .label-info{
+      font-size: 2.2em;
+    }
+    .choose-number-item{
+      margin-bottom: 16px;
+    }
+  }
+  .choose-standard{
+    margin-bottom: 24px;
+    .choose-standard-list{
+      width: 84%;
+      li{
+        margin: 0 10px 10px 0;
+        width: 88px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 2.2em;
+      }
+      b{
+        width: 28px;
+        height: 28px;
+
+      }
+      .choose-active{
+        b{
+          background: url(../img/active-log.png) 0 0 no-repeat;
+          -webkit-background-size: 28px auto;
+          background-size: 28px auto;
+        }
+      }
+
+    }
+  }
+
+
+  .tab-show{
+
+    .js-tab-body {
+      padding: 10px 0;
+    }
+
+    .tab-nav{
+      height: 60px;
+      li{
+        margin: 10px 0;
+        font-size: 2.2em;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+  }
 }
+
 /*-----------------------index-show.html end----------------------*/
