@@ -978,18 +978,8 @@ li {
   @extend %show-wrap;
   .left-btn,
   .right-btn {
+    @extend %btn-s;
     width: 45%;
-    height: 30px;
-    border: 0 none;
-    border-radius: 4px;
-    font-size: 1.4em;
-    font-weight:normal;
-    color: #fff;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    font-family: "Microsoft Yahei";
   }
   .left-btn {
     float: left;
@@ -1154,14 +1144,7 @@ li {
 
     }
   }
-  .management-my-btns {
-    .left-btn,
-    .right-btn {
-      height: 60px;
-      font-size: 2.2em;
-      font-family: "Microsoft Yahei";
-    }
-  }
+
   .team-list-right-btn {
     top: 46px;
     width: 13px;
@@ -1542,18 +1525,11 @@ li {
     color: $font-normal-999;
   }
   .join-in-header-btn {
+    @extend %btn-s;
     position: absolute;
     right: 8px;
     top: 24px;
     width: 68px;
-    height: 24px;
-    font-weight:normal;
-    background: $bg-color-yellow;
-    font-size: 1.2em;
-    border-radius: 4px;
-    color: #fff;
-    border: 0 none;
-    appearance: none;
   }
   .level-icon{
     float: left;
@@ -1573,17 +1549,10 @@ li {
 }
 
 .join-in-con-btn {
+  @extend %btn-100s;
   margin: 0 auto;
-  height: 30px;
   @extend %show-wrap;
-  display: block;
-  border-radius: 4px;
-  font-size: 1.4em;
-  color: #fff;
-  font-weight:normal;
   background: $bg-color-yellow;
-  border: 0 none;
-  appearance: none;
 }
 
 .pop {
@@ -1880,10 +1849,8 @@ li {
       float: left;
     }
     .join-in-header-btn {
-      top: 46px;
+      top: 26px;
       width: 116px;
-      height: 40px;
-
       font-size: 2em;
     }
   }
@@ -1893,8 +1860,6 @@ li {
     }
   }
   .join-in-con-btn {
-    height: 68px;
-    font-weight:normal;
     font-size: 2.2em;
   }
 }
