@@ -1,0 +1,1 @@
+<img src="buildcode.php?codebar=BCGcode39&text=6000000000298201"/>

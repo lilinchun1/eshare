@@ -154,7 +154,8 @@ button.disable{
 }
 
 %show-wrap {
-  width: 93.75%;
+  //width: 93.75%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -2481,7 +2482,6 @@ li {
   height: 36px;
   overflow: hidden;
   border: 1px solid $bd-color-f3;
-  border-radius: 4px;
   font-size: 1.4em;
   background: #fff;
     .select-draw-con{
@@ -2506,9 +2506,7 @@ li {
       right: 0px;
       width: 36px;
       height: 36px;
-      border-radius: 4px;
       border-left: 1px solid $bd-color-f3;
-      border-right: 1px solid $bd-color-f3;
       background: #f9f9f9;
       span {
         margin: 11px 0 0 11px;
@@ -2775,10 +2773,14 @@ li {
 @media screen and (min-width: 768px) {
   .apply-cash-wrap{
     padding: 30px 0;
-    font-size: 2em;
     span{
-      font-size: 1em;
+      font-size: 2em;
     }
+    em{
+      font-size: 2.2em;
+    }
+    i{
+      font-size: 2.6em;}
   }
 
   .modal{
