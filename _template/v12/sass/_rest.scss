@@ -58,7 +58,9 @@ $color-red:#e02d2a;
 button.load-btn{
   background: #c9c9c9;
 }
-
+button.disable{
+  background: #c9c9c9 !important;
+}
 /*加减数量item*/
 .select-number{
   float: left;
@@ -219,6 +221,50 @@ input[type="checkbox"]:checked {
       margin: 12px 0 0 12px;
       width: 40px;
       height: 40px;
+    }
+  }
+}
+
+/*顶部弹框*/
+.my-bank-alert {
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .7);
+  background-image: image-url("icon/alert.png");
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  background-size: 22px auto;
+  p {
+    margin: 0 auto;
+    padding:0;
+    width: 69%;
+    font-size: 1.2em;
+  }
+  .close {
+    position: absolute;
+    top: -2px;
+    right: 10px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 768px){
+  .my-bank-alert{
+    background-color: rgba(0, 0, 0, .7);
+    background-image: image-url("icon_2x/alert.png");
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+
+    padding: 10px 0;
+    background-size: 44px auto;
+    p{
+      font-size: 1.8em;
+    }
+    .close{
+      top: -12px;
+      font-size: 4em;
     }
   }
 }
@@ -448,11 +494,11 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     }
     &:nth-of-type(2){
       width: 35%;
-      margin-top: -7px;
+      margin-top: -12px;
     }
     &:nth-of-type(3){
       width: 35%;
-      margin-top: -7px;
+      margin-top: -12px;
     }
     &:nth-of-type(4){
       width: 15%;
@@ -464,6 +510,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     @extend %btn-s;
     margin: 0 auto;
     width: 95px;
+    height: 34px;
     background: $color-red;
     font-size: 1.2em;
   }
@@ -557,7 +604,21 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 
   .show-foot-nav .show-foot-nav-btn{
     width: 190px;
+    height: 68px;
   }
+  .show-foot-nav{
+    li{
+      &:nth-of-type(2){
+        width: 35%;
+        margin-top: -24px;
+      }
+      &:nth-of-type(3){
+        width: 35%;
+        margin-top: -24px;
+      }
+    }
+  }
+
 }
 
 /*-----------------------foot end----------------------*/
