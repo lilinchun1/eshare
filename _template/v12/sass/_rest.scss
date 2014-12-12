@@ -367,9 +367,9 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     position: relative;
     float: left;
     width: 25%;
+    height: 100%;
     font-size: 1.2em;
     text-align: center;
-    line-height: 7;
   }
   span{
     position: absolute;
@@ -393,6 +393,12 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     width: 26px;
     height: 26px;
     display: block;
+  }
+  .foot-nav-tt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
   }
   a{
     display: block;
@@ -534,7 +540,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     li{
       position: relative;
       font-size: 2em;
-      line-height: 8;
+      height: 100%;
     }
     span{
       position: absolute;
@@ -554,6 +560,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
       height: 52px;
       display: block;
     }
+
   }
   .search{
     margin: 0 auto;
