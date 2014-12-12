@@ -12,6 +12,7 @@ select [name="unit"]{
 body{background: #fff;
   margin: 0;
   padding: 0;
+  font-family: "microsoft yahei";
 }
 li{list-style:none;
   margin: 0;
@@ -625,7 +626,7 @@ select{
   }
   .cart_char_text_2_1 {
     padding-left: 20px;
-    font-size:2em;
+    font-size:2.4em;
     height: 90px;
   }
   .cart_input{
@@ -667,6 +668,26 @@ select{
 
 
 }
+.add-r{
+  width: 69%;
+  float:left;
+
+  .add-srk{
+    @extend %input-text;
+    width: 100%;
+    color:#999;
+    font-size:1.4em;
+  }
+  textarea{
+    border: 1px solid $border-color;
+    font-size: 2em;
+    text-indent: 8px;
+    padding: 5px 0;
+    color:#999;
+    display: block;
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .add-add{
     padding: 8px 0px;
@@ -685,9 +706,9 @@ select{
     .add-r{
       width: 69%;
       float:left;
-      font-size: 1.8em;
+      //font-size: 1.8em;
       .add-srk{
-
+    font-size: 2.2em;
       }
 
       textarea{
@@ -747,26 +768,7 @@ select{
     line-height: 30px;
 
   }
-  .add-r{
-    width: 69%;
-    float:left;
-    font-size: 0.6em;
-    .add-srk{
-      @extend %input-text;
-      width: 100%;
-      color:#999;
-      font-size: 1.4em;
-    }
-    textarea{
-      border: 1px solid $border-color;
-      font-size: 1.4em;
-      text-indent: 8px;
-      padding: 5px 0;
-      color:#999;
-      display: block;
-      width: 100%;
-    }
-  }
+
   .add-r2{
     width: 79%;
     float:left;
@@ -787,8 +789,26 @@ select{
     }
   }
 }
-
+.add {
+  margin: 0px 10px;
+  h4 {
+    line-height: 300%;
+    font-size: 1.6em;
+    border-bottom: 1px solid #d3d3d3;
+    overflow: hidden;
+    display: block;
+  }
+}
 @media screen and (min-width: 768px) {
+  .add {
+    margin: 0px 10px;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 20px;
+    h4 {
+      font-size: 2.4em;
+    }
+  }
   .add-add{
     padding: 8px 0px;
     margin:8px 0px;
@@ -827,5 +847,5 @@ select{
   }
 }
 .select-wrap{
-  font-size:1.4em;
+  //font-size:1.4em;
 }
