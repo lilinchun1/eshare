@@ -29,6 +29,9 @@ img{
 option{
   padding: 0;
   margin: 0;}
+select{
+  border: none;
+}
 .min{
   width: 100%;}
 
@@ -36,7 +39,7 @@ option{
 .bill_top{
   line-height:40px;
   color:#666;
-  font-size:1.2em;
+  font-size:1.4em;
   border-bottom: 1px solid #d3d3d3;
   width: 95%;
   margin: 0 auto;
@@ -46,7 +49,7 @@ option{
 
 .bill_1{
   color: #999;
-  font-size:1.2em;
+  font-size:1.4em;
   line-height:22px;
   border-bottom: 1px solid #d3d3d3;
   width: 95%;
@@ -122,7 +125,7 @@ option{
 }
 .cart_char_1{
   margin-top: 5px;
-  width: 22%;
+  width: 67px;
 
 }
 .cart_char_1 img{
@@ -132,8 +135,8 @@ option{
 }
 
 .cart_char_2{
-  width: 50%;
-  margin-left: 1%;
+  width: 43%;
+  margin-left: 2%;
   line-height:20px;
   color: #666;}
 .cart_char_2 span{
@@ -165,6 +168,7 @@ option{
   float: left;
   font-size: 1em;
   margin-right: 5px;
+  line-height: 26px;
 
 }
 .cart_char_4 div{
@@ -175,9 +179,10 @@ option{
   text-align: center;
 }
 .cart_char_4_1{
+  line-height: 26px;
   color: #666;}
 .cart_char_5{
-  width: 90%;
+  width: 70%;
 
   color: #999;
 }
@@ -187,21 +192,21 @@ option{
 }
 .cart_char_5 p{
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 34px;
 }
 .cart_char_6 img{
-  margin-top:100%;
-  width: 20px;
+  margin-top:60%;
+  width:50px;
 }
 .shop_new_img img{
   margin-top:45px;
-  width:20px;
+  width: 20px;
 
 }
 .cart_char_7{
   color: #666;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 34px;
 }
 .cart_char_text{
@@ -213,7 +218,7 @@ option{
 
 }
 .cart_char_text_1{
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 31px;
   color: #999;
   width: 100%;
@@ -231,7 +236,7 @@ option{
   margin: 0;
   width:70%;
   -webkit-appearance: none;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 31px;
   color: #999;
   background: #fff;
@@ -271,13 +276,13 @@ option{
 .cart_char_text_char{
   width:22%;
   float: left;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color:#666;
   line-height: 31px;
 }
 
 .cart_char_text_char_0{
-  font-size: 1.2em;
+  font-size: 1.4em;
   width:22%;
   float: left;
   color:#666;
@@ -300,21 +305,15 @@ option{
   line-height: 34px;
   text-align: left;
   background: #fff;
-  font-size: 1.2em;
+  font-size: 1.4em;
   border: none;
   color:#999;
 }
-.cart_button a{
-  width: 95%;
-  margin:0 2.5% 3% 2.5%;
+.cart_btn{
+  @extend %btn-100s;
   display: block;
-  height: 28px;
-  line-height: 28px;
-  border-radius: 2px;
   text-align: center;
-  color: #ffffff;
-  font-size: 1.2em;
-
+  margin-bottom: 20px;
 }
 
 .green{
@@ -335,7 +334,7 @@ option{
   line-height: 34px;
 }
 .cart_text p{
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 /*-----------------------购物车空----------------------*/
 .shop_null_img{
@@ -440,6 +439,12 @@ option{
   font-size: 1em;
   height: 28px;
 }
+
+
+
+
+
+
 /*-----------------------loading----------------------*/
 .loading{
   color: $font-color999;
@@ -528,8 +533,9 @@ option{
 
   }
   .cart_char_6 img{
+    margin-top: 40%;
 
-    width: 35px;
+    width: 100px;
   }
   .shop_new_img img{
     width: 35px;
@@ -660,4 +666,162 @@ option{
   }
 
 
+}
+@media screen and (min-width: 768px) {
+  .add-add{
+    padding: 8px 0px;
+    margin:8px 0px;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    .add-l{
+      width: 30%;
+      float:left;
+      color:#666;
+      font-size: 2em;
+      line-height: 60px;
+
+    }
+    .add-r{
+      width: 69%;
+      float:left;
+      font-size: 1.8em;
+      .add-srk{
+
+      }
+
+      textarea{
+        border: 1px solid $border-color;
+        font-size: 1.8em;
+        text-indent: 8px;
+        padding: 5px 0;
+        color:#999;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+.ticket-b{
+  padding: 6px 0px;
+  margin:6px 0px;
+  overflow: hidden;
+  font-size: 1.4em;
+  color:#666;
+  display: block;
+  span{
+    margin: 0px 5px;
+  }
+}
+@media screen and (min-width: 768px){
+  .ticket-b{
+    padding: 8px 0px;
+    margin:8px 0px;
+    overflow: hidden;
+    font-size: 2em;
+    color:#666;
+    display: block;
+    span{
+      margin: 0px 5px;
+    }
+  }
+}
+.add-add{
+  padding: 4px 0px;
+  margin:4px 0px;
+  overflow: hidden;
+  font-size: 1.4em;
+  color:#666;
+  display: block;
+  clear: both;
+  .add-l{
+    width: 30%;
+    float:left;
+    font-size: 1em;
+    line-height: 30px;
+
+  }
+  .add-l2{
+    width: 20%;
+    float:left;
+    font-size: 1em;
+    line-height: 30px;
+
+  }
+  .add-r{
+    width: 69%;
+    float:left;
+    font-size: 0.6em;
+    .add-srk{
+      @extend %input-text;
+      width: 100%;
+      color:#999;
+      font-size: 1.4em;
+    }
+    textarea{
+      border: 1px solid $border-color;
+      font-size: 1.4em;
+      text-indent: 8px;
+      padding: 5px 0;
+      color:#999;
+      display: block;
+      width: 100%;
+    }
+  }
+  .add-r2{
+    width: 79%;
+    float:left;
+    font-size: 0.7em;
+    .add-srk{
+      @extend %input-text;
+      width: 100%;
+      color:#999;
+      font-size: 1.4em;
+    }
+    textarea{
+      border: 1px solid $border-color;
+      font-size: 1.4em;
+      text-indent: 8px;
+      padding: 5px 0;
+      color:#999;
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .add-add{
+    padding: 8px 0px;
+    margin:8px 0px;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    .add-l{
+      width: 30%;
+      float:left;
+      color:#666;
+      font-size: 2em;
+      line-height: 60px;
+
+    }
+    .add-r{
+      width: 69%;
+      float:left;
+      font-size: 1.8em;
+      .add-srk{
+
+      }
+
+      textarea{
+        border: 1px solid $border-color;
+        font-size: 1.8em;
+        text-indent: 8px;
+        padding: 5px 0;
+        color:#999;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
 }

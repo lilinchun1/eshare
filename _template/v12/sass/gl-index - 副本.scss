@@ -27,7 +27,7 @@ body{
   border-bottom:1px solid #d3d3d3;
   p{
     margin-left: 20%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height:180%;
   }
 }
@@ -56,7 +56,7 @@ body{
 
   h4{
     line-height:240%;
-    font-size:1.6em;
+    font-size:1.4em;
     line-height: 300%;
     border-bottom:1px solid #d3d3d3;
   }
@@ -75,7 +75,7 @@ body{
     .slb-c{
       width:45%;
       float:left;
-      font-size: 1.4em;
+      font-size: 1.2em;
       span{
         color:#e02d2a;
       }
@@ -85,7 +85,7 @@ body{
       float: right;
       text-align: right;
       color:#afafaf;
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
   }
 }
@@ -94,7 +94,7 @@ body{
   border-bottom:1px solid #d3d3d3;
   line-height: 300%;
   margin:0px 10px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   span{
     color:#e02d2a;
   }
@@ -173,7 +173,7 @@ body{
   .logistics-ps{
     clear: both;
     padding: 5px 10px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color:#999;
   }
   ul{
@@ -181,7 +181,7 @@ body{
     margin:5%;
 
     display: block;
-    font-size:1.4em;
+    font-size:1.2em;
 
     li{
       clear: both;
@@ -369,7 +369,7 @@ body{
   margin: 0px 10px;
 }
 .order-add{
-  font-size: 1.4em;
+  font-size: 1.2em;
   padding:10px 0;
   line-height: 240%;
   h4{
@@ -402,7 +402,7 @@ body{
     margin-left: 5px;
   }
   ul{
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding:10px 0;
     line-height: 240%;
     a{
@@ -452,7 +452,7 @@ body{
 }
 .order-top{
   border-bottom: 1px solid #d3d3d3;
-  font-size: 1.2em;
+
   overflow: hidden;
   li{
     float:left;
@@ -482,16 +482,27 @@ body{
 }
 
 //单独订单
+.order-b-f{
+  width: 100%;
+  clear: both;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+}
 .order-l-b{
   clear: both;
   overflow: hidden;
+  i{
+    color:#999;
+  }
+
   h4{
     background: url(../img/256-256.png) 10px no-repeat;
     background-size: 6%;
     margin: 0px 10px;
     line-height: 300%;
-    font-size: 1.4em;
-    padding-left: 50px;
+    font-size: 1.2em;
+    padding-left: 40px;
     border-bottom:1px solid #d3d3d3;
     overflow: hidden;
     border-top:1px solid #d3d3d3;
@@ -506,7 +517,7 @@ body{
     text-align: right;
     line-height: 300%;
     margin: 0px 10px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     border-bottom:1px solid #d3d3d3;
     i{
       float:left;
@@ -554,7 +565,7 @@ body{
 .gl-btn-k1{
   @extend %btn-k;
 
-  font-size: 1.6em;
+  font-size: 1.4em;
   width: 31%;
   margin: 2%;
   float: right;
@@ -564,7 +575,7 @@ body{
 .gl-btn-k2{
   @extend %btn-k;
   color: #dd2f2f;
-  font-size: 1.6em;
+  font-size: 1.4em;
   width: 31%;
   margin: 2%;
   float: right;
@@ -664,7 +675,7 @@ body{
       text-align: center;
       line-height: 300%;
       color:#fff;
-      font-size: 1.8em;
+      font-size: 1.6em;
       font-weight: bold;
     }
   }
@@ -674,7 +685,7 @@ body{
 
   li{
     line-height: 400%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     width: 100%;
     float:left;
     border-bottom:1px solid #d3d3d3;
@@ -771,7 +782,7 @@ body{
   margin:0px 3%;
   h4{
     line-height:240%;
-    font-size:1.6em;
+    font-size:1.4em;
     line-height: 300%;
   }
   textarea{
@@ -781,14 +792,14 @@ body{
     border:1px solid #d3d3d3;
     color:#c4c4c4;
     text-align: left;
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 180%;
     padding: 2%;
   }
   p{
     line-height: 300%;
     color:#e02d2a;
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   input{
     width: 96%;
@@ -846,7 +857,7 @@ body{
 
 //用户中心-我的收藏-店铺
 .collection-top{
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 300%;
   display: block;
   overflow: hidden;
@@ -991,7 +1002,7 @@ body{
       p{
         color:#999;
         line-height: 150%;
-        font-size: 1.4em;
+        font-size: 1.2em;
       }
     }
   }
@@ -1073,7 +1084,7 @@ body{
   margin: 0px 10px;
   h4{
     line-height: 300%;
-    font-size: 1.6em;
+    font-size: 1.4em;
     border-bottom: 1px solid  #d3d3d3;
     overflow: hidden;
     display: block;
@@ -1098,7 +1109,7 @@ body{
     .add-box-c{
       width: 76%;
       float:right;
-      font-size: 1.4em;
+      font-size: 1.2em;
       line-height: 180%;
       span{
         color:#999;
@@ -1111,8 +1122,8 @@ body{
       a{
         margin: 7px 0px;
         img{
-          width: 80%;
-          padding: 4px 0;
+          width: 60%;
+          padding: 3px 0;
         }
       }
     }
@@ -1171,7 +1182,6 @@ body{
   .user-add{
     background:#e02d2a ;
     width: 98%;
-    width: 98%;
     border: 0;
     margin:1%;
 
@@ -1182,37 +1192,37 @@ body{
   padding: 4px 0px;
   margin:4px 0px;
   overflow: hidden;
-  font-size: 1.4em;
+  font-size: 1.2em;
   color:#666;
   display: block;
   clear: both;
   .add-l{
     width: 30%;
     float:left;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 30px;
 
   }
   .add-l2{
     width: 20%;
     float:left;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 30px;
 
   }
   .add-r{
     width: 69%;
     float:left;
-    font-size: 0.6em;
+    font-size: 1.2em;
     .add-srk{
       @extend %input-text;
       width: 100%;
       color:#999;
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
     textarea{
       border: 1px solid $border-color;
-      font-size: 1.4em;
+      font-size: 1.2em;
       text-indent: 8px;
       padding: 5px 0;
       color:#999;
@@ -1223,16 +1233,16 @@ body{
   .add-r2{
     width: 79%;
     float:left;
-    font-size: 0.7em;
+    font-size: 1.2em;
     .add-srk{
       @extend %input-text;
       width: 100%;
       color:#999;
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
     textarea{
       border: 1px solid $border-color;
-      font-size: 1.4em;
+      font-size: 1.2em;
       text-indent: 8px;
       padding: 5px 0;
       color:#999;
@@ -1257,17 +1267,41 @@ body{
       line-height: 60px;
 
     }
+    .add-l2{
+      width: 10%;
+      float:left;
+      color:#666;
+      font-size: 2em;
+      line-height: 60px;
+
+    }
     .add-r{
       width: 69%;
       float:left;
-      font-size: 1.8em;
+      font-size: 1.6em;
       .add-srk{
 
       }
-
       textarea{
         border: 1px solid $border-color;
-        font-size: 1.8em;
+        font-size: 1.6em;
+        text-indent: 8px;
+        padding: 5px 0;
+        color:#999;
+        display: block;
+        width: 100%;
+      }
+    }
+    .add-r2{
+      width: 89%;
+      float:left;
+      font-size: 1.6em;
+      .add-srk{
+
+      }
+      textarea{
+        border: 1px solid $border-color;
+        font-size: 1.6em;
         text-indent: 8px;
         padding: 5px 0;
         color:#999;
@@ -1312,16 +1346,16 @@ input[type="checkbox"]:checked {
   float:left;
   overflow: hidden;
   border: 1px solid $border-color;
-  font-size: 1.6em;
+  font-size: 1.4em;
   background: #fff;
   .select-draw-con{
     position: absolute;
-    font-size: 1.4em;
+    font-size: 1em;
     z-index: 2;
     width: 100%;
     height: 30px;
     color: #999;
-    text-indent: 1.2em;
+    text-indent: 1em;
     background-color: transparent;
     border: 0 none;
     border-radius: 0;
@@ -1336,7 +1370,9 @@ input[type="checkbox"]:checked {
     right: 0;
     width: 30px;
     height: 30px;
+    border-radius: 4px;
     border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
     background: #f9f9f9;
   }
   .icon-arrow-down{
@@ -1351,7 +1387,7 @@ input[type="checkbox"]:checked {
     height: 60px;
     .select-draw-con {
       height: 60px;
-      font-size: 1.6em;
+      font-size: 1.4em;
       color:#999;
     }
     .logo {
@@ -1370,7 +1406,7 @@ input[type="checkbox"]:checked {
   padding: 6px 0px;
   margin:6px 0px;
   overflow: hidden;
-  font-size: 1.4em;
+  font-size: 1.2em;
   color:#666;
   display: block;
   span{
@@ -1388,5 +1424,17 @@ input[type="checkbox"]:checked {
     span{
       margin: 0px 5px;
     }
+  }
+}
+
+
+//卖家 我的店铺
+.shop-header{
+  border-bottom: 1px solid #d7d7d7;
+}
+.level-icon{
+  img{
+    width:15px;
+
   }
 }

@@ -9,7 +9,6 @@
     <meta name="format-detection" content="telephone=no">
     <title>购物车</title>
 
-    <link rel="stylesheet" href="../v12/css/llc-index.css"/>
     <link rel="stylesheet" href="../v12/css/cy-index.css"/>
 </head>
 <body>
@@ -90,24 +89,18 @@
             <input type="checkbox" name="a">企业<br>
         </div>
 
-        <div style="overflow:hidden; padding: 0;margin: 0; width: 100%;margin-bottom: 10px;">
-            <span class="cart_char_text_char">企业名称:</span>
-
-            <div class="cart_char_selBox">
-                <input type="text" class="cart_char_text_1">
-            </div>
+        <div class="add-add">
+            <div class="add-l">企业名称：</div>
+            <div class="add-r"><input class="add-srk" value="如：张先生"></div>
         </div>
 
-        <div style="overflow:hidden; padding: 0;margin: 0;margin-bottom: 10px;">
-            <div class="cart_char_text_char">商品类型:</div>
-            <div class="cart_char_selBox">
 
-                <div class="select-wrap register-select" style="width: 99%;">
-                    <select name="unit" class="cart_char_sel">
+            <div class="add-add">
+                <div class="add-l">商品类型：</div>
+                <div class="add-r  select-wrap register-select">
+                    <select class="select-draw-con">
                         <option>请选择</option>
-                        <option>01单元</option>
-                        <option>02单元</option>
-                        <option>03单元</option>
+                        <option>2014</option>
                     </select>
 
                     <div class="logo">
@@ -115,11 +108,10 @@
                             <use xlink:href="../v12/img/svg/svgdefs.svg#icon-arrow-down"></use>
                         </svg>
                     </div>
+
                 </div>
-
-
             </div>
-        </div>
+
     </div>
 </div>
 <div class="cart_text">
@@ -130,10 +122,15 @@
     </div>
 </div>
 <div class="cart_button">
-    <a class="orange" href="#">支付宝安全支付</a>
-    <a class="green" href="#">微信安全支付</a>
+<!--    <a class="orange" href="#">支付宝安全支付</a>
+    <a class="green" href="#">微信安全支付</a>-->
+    <button type="button" class="orange cart_btn">支付宝安全支付</button>
+    <button type="button" class="green cart_btn">微信安全支付</button>
+
 </div>
-<div style="text-align: center;font-size: 1em;color:#999;" class="botton">易享科技</div>
+<footer class="footer">
+    易享科技出品
+</footer>
 <!--底部导航 开始-->
 <div class="mod-foot-nav" id="ftsh">
     <ul class="foot-nav-list" id="ftsh1">
