@@ -594,16 +594,20 @@ option{
   width:90%;
   margin: 0 auto;
   border-bottom: 1px solid #cccccc;
-  padding: 20px 0 20px 0;
+  padding: 5px 0 5px 0;
+  overflow: hidden;
   .search_img {
-    vertical-align: middle;
-    width: 30%;
+    margin-top: 12px;
+    width: 65px;
+    height: 65px;
+    border: 1px solid $border-color;
   }
   .search_rigth{
-    font-size:1.8em;
+    p{
+      font-size:1.4em;
+    }
     float: right;
-    width: 60%;
-    min-width: 286px;
+    width: 74%;
     .red_text{
       color: red;
     }
@@ -614,5 +618,54 @@ option{
 
 
 
+.search-end{
+  height: 50px;
+  background: #333333;
+  display: block;
+  .search-btn{
+    @extend %btn-s;
+    margin-top: 10px;
+    width: 36px;
+    height: 25px;
+    line-height: 25px;
+    background: $color-red;
+  }
+  .icon-iconfont-left{
+    margin: 10px 10px 0 12px;
+    float: left;
+    fill: #535353;
+    width: 14px;
+    height: 25px;
+  }
+}
 
+@media screen and (min-width: 768px){
+.search-end{
+  height: 100px;
+  .search-btn{
+    margin-top: 20px;
+    width: 72px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .icon-iconfont-left{
+    margin: 20px 20px 0 24px;
+    fill: #535353;
+    width: 28px;
+    height: 50px;
+  }
+}
+  .search_order{
+    .search_img {
+      margin-top: 12px;
+      width: 130px;
+      height: 130px;
+    }
+    .search_rigth{
+      p{
+        font-size: 2.2em;
+      }
+    }
+  }
 
+}
