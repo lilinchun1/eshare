@@ -29,41 +29,16 @@
             <button type="button" class="draw-money-btn" id="J_code">确定</button>
         </p>
     </section>
-    <div class="overlay" id="J_overlay"></div>
-    <div class="modal" id="con1">
-        <p>
-            <span class="alert-logo yes-logo"></span>
-        </p>
-        <p>
-            申请已提交，请等待结算...
-        </p>
-
-        <p>
-            <button type="button" class="mode-btn" id="J_btn">确定</button>
-        </p>
-    </div>
     <footer class="foot">
         易享科技出品
     </footer>
 </div>
-<script>
-    window.onload =function () {
-        var btn_text = document.getElementById("J_code");
-        var overlay = document.getElementById("J_overlay");
-        var con1 = document.getElementById("con1");
-        var btn = document.getElementById("J_btn");
-
-        btn_text.onclick = function () {
-            var scrolltop = document.documentElement.scrollTop ||document.body.scrollTop;
-            overlay.style.display = "block";
-            con1.style.display = "block";
-            overlay.style.height = document.body.clientHeight +scrolltop+'px';
-        };
-        btn.onclick = overlay.onclick = function () {
-            overlay.style.display = "none";
-            con1.style.display = "none";
-        };
-    }
-</script>
+<div class="alert2">
+    <img class="alert2-logo-right" src="../v12/img/alert-logo-right.png" alt=""/>
+    <p>
+        申请已提交，请等待结算...
+    </p>
+    <button type="button" class="alert2-btn">确认</button>
+</div>
 </body>
 </html>
