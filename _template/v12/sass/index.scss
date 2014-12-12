@@ -3527,36 +3527,24 @@ min-height: 300px;
 
 }
 .input-wrap{
-  height: 36px;
-  line-height: 36px;
-  border-radius: 4px;
-  border: 1px solid $bd-color-f3;
     .register-input{
+      @extend %input-text;
       width: 100%;
-      border: 0 none;
-      text-indent: 1em;
-      font-size: 1.4em;
       color: $font-color-666;
-      background-color: transparent;
     }
 }
 .register-btn{
-  width: 100%;
-  height: 36px;
-  border-radius: 4px;
+  @extend %btn-100s;
   color: #fff;
-  font-size: 1.4em;
   margin-top:14px;
-  background-color: $bg-color-yellow;
+  background-color: $color-red;
 }
 .register-btn4{
-  width: 100%;
-  height: 36px;
-  border-radius: 4px;
+  @extend %btn-100s;
   color: #fff;
   font-size:1em;
   margin-top:14px;
-  background-color: $bg-color-yellow;
+  background-color: $color-red;
 }
 .register-item{
   .input-wrap{
@@ -3607,14 +3595,9 @@ min-height: 300px;
   }
 
 @media screen and (min-width: 768px) {
-  .input-wrap{
-    height: 68px;
-    line-height: 68px;
-    font-size: 1.4em;
-  }
+
   .register-btn{
-    height: 68px;
-    font-size: 2.2em;
+
     margin-top:14px;
   }
   .register-btn2{
@@ -3624,7 +3607,6 @@ min-height: 300px;
     float: right;
   }
   .register-btn4{
-    height: 68px;
     font-size: 1.2em;
     margin-top:14px;
   }
