@@ -677,6 +677,7 @@ select{
     width: 100%;
     color:#999;
     font-size:1.4em;
+    font-family: "microsoft yahei";
   }
   textarea{
     border: 1px solid $border-color;
@@ -772,10 +773,12 @@ select{
   .add-r2{
     width: 79%;
     float:left;
+
     .add-srk{
       @extend %input-text;
       width: 100%;
       color:#999;
+      font-family: "microsoft yahei";
 
     }
     textarea{

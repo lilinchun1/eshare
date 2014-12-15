@@ -100,7 +100,7 @@ button.disable {
 .add-r .add-srk, .add-add .add-r2 .add-srk {
   height: 30px;
   border: 1px solid #d8d8d8;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-indent: 8px;
   display: block; }
 
@@ -1410,8 +1410,9 @@ select {
   .add-r .add-srk {
     width: 100%;
     color: #999;
-    font-size: 1.4em; }
-  /* line 681, ../sass/cy-index.scss */
+    font-size: 1.4em;
+    font-family: "microsoft yahei"; }
+  /* line 682, ../sass/cy-index.scss */
   .add-r textarea {
     border: 1px solid #d8d8d8;
     font-size: 2em;
@@ -1422,28 +1423,28 @@ select {
     width: 100%; }
 
 @media screen and (min-width: 768px) {
-  /* line 692, ../sass/cy-index.scss */
+  /* line 693, ../sass/cy-index.scss */
   .add-add {
     padding: 8px 0px;
     margin: 8px 0px;
     overflow: hidden;
     display: block;
     clear: both; }
-    /* line 698, ../sass/cy-index.scss */
+    /* line 699, ../sass/cy-index.scss */
     .add-add .add-l {
       width: 30%;
       float: left;
       color: #666;
       font-size: 2em;
       line-height: 60px; }
-    /* line 706, ../sass/cy-index.scss */
+    /* line 707, ../sass/cy-index.scss */
     .add-add .add-r {
       width: 69%;
       float: left; }
-      /* line 710, ../sass/cy-index.scss */
+      /* line 711, ../sass/cy-index.scss */
       .add-add .add-r .add-srk {
         font-size: 2.2em; }
-      /* line 714, ../sass/cy-index.scss */
+      /* line 715, ../sass/cy-index.scss */
       .add-add .add-r textarea {
         border: 1px solid #d8d8d8;
         font-size: 1.8em;
@@ -1452,7 +1453,7 @@ select {
         color: #999;
         display: block;
         width: 100%; } }
-/* line 726, ../sass/cy-index.scss */
+/* line 727, ../sass/cy-index.scss */
 .ticket-b {
   padding: 6px 0px;
   margin: 6px 0px;
@@ -1460,12 +1461,12 @@ select {
   font-size: 1.4em;
   color: #666;
   display: block; }
-  /* line 733, ../sass/cy-index.scss */
+  /* line 734, ../sass/cy-index.scss */
   .ticket-b span {
     margin: 0px 5px; }
 
 @media screen and (min-width: 768px) {
-  /* line 738, ../sass/cy-index.scss */
+  /* line 739, ../sass/cy-index.scss */
   .ticket-b {
     padding: 8px 0px;
     margin: 8px 0px;
@@ -1473,10 +1474,10 @@ select {
     font-size: 2em;
     color: #666;
     display: block; }
-    /* line 745, ../sass/cy-index.scss */
+    /* line 746, ../sass/cy-index.scss */
     .ticket-b span {
       margin: 0px 5px; } }
-/* line 750, ../sass/cy-index.scss */
+/* line 751, ../sass/cy-index.scss */
 .add-add {
   padding: 4px 0px;
   margin: 4px 0px;
@@ -1484,27 +1485,28 @@ select {
   color: #666;
   display: block;
   clear: both; }
-  /* line 757, ../sass/cy-index.scss */
+  /* line 758, ../sass/cy-index.scss */
   .add-add .add-l {
     width: 30%;
     float: left;
     font-size: 1.4em;
     line-height: 30px; }
-  /* line 764, ../sass/cy-index.scss */
+  /* line 765, ../sass/cy-index.scss */
   .add-add .add-l2 {
     width: 20%;
     float: left;
     font-size: 1.4em;
     line-height: 30px; }
-  /* line 772, ../sass/cy-index.scss */
+  /* line 773, ../sass/cy-index.scss */
   .add-add .add-r2 {
     width: 79%;
     float: left; }
-    /* line 775, ../sass/cy-index.scss */
+    /* line 777, ../sass/cy-index.scss */
     .add-add .add-r2 .add-srk {
       width: 100%;
-      color: #999; }
-    /* line 781, ../sass/cy-index.scss */
+      color: #999;
+      font-family: "microsoft yahei"; }
+    /* line 784, ../sass/cy-index.scss */
     .add-add .add-r2 textarea {
       border: 1px solid #d8d8d8;
       font-size: 1.4em;
@@ -1514,10 +1516,10 @@ select {
       display: block;
       width: 100%; }
 
-/* line 792, ../sass/cy-index.scss */
+/* line 795, ../sass/cy-index.scss */
 .add {
   margin: 0px 10px; }
-  /* line 794, ../sass/cy-index.scss */
+  /* line 797, ../sass/cy-index.scss */
   .add h4 {
     line-height: 300%;
     font-size: 1.6em;
@@ -1526,38 +1528,38 @@ select {
     display: block; }
 
 @media screen and (min-width: 768px) {
-  /* line 803, ../sass/cy-index.scss */
+  /* line 806, ../sass/cy-index.scss */
   .add {
     margin: 0px 10px;
     overflow: hidden;
     display: block;
     padding-bottom: 20px; }
-    /* line 808, ../sass/cy-index.scss */
+    /* line 811, ../sass/cy-index.scss */
     .add h4 {
       font-size: 2.4em; }
 
-  /* line 812, ../sass/cy-index.scss */
+  /* line 815, ../sass/cy-index.scss */
   .add-add {
     padding: 8px 0px;
     margin: 8px 0px;
     overflow: hidden;
     display: block;
     clear: both; }
-    /* line 818, ../sass/cy-index.scss */
+    /* line 821, ../sass/cy-index.scss */
     .add-add .add-l {
       width: 30%;
       float: left;
       color: #666;
       font-size: 2em;
       line-height: 60px; }
-    /* line 826, ../sass/cy-index.scss */
+    /* line 829, ../sass/cy-index.scss */
     .add-add .add-l2 {
       font-size: 2em; }
-    /* line 829, ../sass/cy-index.scss */
+    /* line 832, ../sass/cy-index.scss */
     .add-add .add-r {
       width: 69%;
       float: left; }
-      /* line 837, ../sass/cy-index.scss */
+      /* line 840, ../sass/cy-index.scss */
       .add-add .add-r textarea {
         border: 1px solid #d8d8d8;
         font-size: 1.8em;
