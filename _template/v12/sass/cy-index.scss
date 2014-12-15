@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "rest";
 
-input[type="button"], input[type="submit"], input[type="reset"] {
+input[type="button"], input[type="submit"], input[type="text"] {
 
   -webkit-appearance: none;
 }
@@ -35,7 +35,14 @@ select{
 }
 .min{
   width: 100%;}
+.add-r2 {
 
+  .add-srk {
+
+    font-size: 1.4em;
+
+  }
+}
 
 .bill_top{
   line-height:40px;
@@ -78,6 +85,9 @@ select{
   height: 36px;
   line-height: 36px;
   border-radius: 2px;
+  -o-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
   text-align: center;
   font-size:1.4em;
   color: #ffffff;
@@ -360,6 +370,9 @@ select{
   height: 28px;
   line-height: 28px;
   border-radius: 2px;
+  -o-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
   text-align: center;
   color: #666;
   font-size: 1.4em;
@@ -403,6 +416,9 @@ select{
   height: 28px;
   line-height: 28px;
   border-radius: 2px;
+  -o-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
   text-align: center;
   color: #666;
   font-size: 1.4em;
@@ -418,6 +434,7 @@ select{
   height: 37px;
   width: 97%;
   margin: 0 auto;
+  margin-top:10px;
 }
 .paym_char span{
 
@@ -453,7 +470,7 @@ select{
   text-align: center;
   font-size: 1em;
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 768px){
   .bill_1 p{
     width: 200px;
     overflow: hidden;
@@ -462,12 +479,14 @@ select{
   }
 
 }
-@media screen and (min-width: 640px){
+@media screen and (min-width: 768px){
   .cart_char_0{
     margin-top:12px;
     padding-bottom:12px;
     }
-
+  .cart_text p .shop_new{
+    font-size: 2.2em;
+  }
   .bill_top{
     font-size:2.2em;
     line-height: 80px;
@@ -641,7 +660,7 @@ select{
     float: left;
   }
   .cart_text p{
-    font-size: 1.4em;
+    font-size: 2em;
     line-height: 40px;
   }
   .paym_char{
@@ -665,8 +684,12 @@ select{
     width: 52px;
     line-height: 52px;
   }
+}
 
-
+.add-r2{
+  .add-srk{
+    font-size: 1.4em;
+  }
 }
 .add-r{
   width: 69%;
@@ -677,7 +700,6 @@ select{
     width: 100%;
     color:#999;
     font-size:1.4em;
-    font-family: "microsoft yahei";
   }
   textarea{
     border: 1px solid $border-color;
@@ -689,6 +711,9 @@ select{
     width: 100%;
   }
 }
+
+
+
 @media screen and (min-width: 768px) {
   .add-add{
     padding: 8px 0px;
@@ -747,6 +772,7 @@ select{
       margin: 0px 5px;
     }
   }
+
 }
 .add-add{
   padding: 4px 0px;
@@ -773,12 +799,12 @@ select{
   .add-r2{
     width: 79%;
     float:left;
-
     .add-srk{
       @extend %input-text;
       width: 100%;
       color:#999;
-      font-family: "microsoft yahei";
+
+
 
     }
     textarea{
@@ -848,7 +874,13 @@ select{
       }
     }
   }
+  .add-r2 {
+
+    .add-srk {
+
+      font-size: 2.2em;
+
+    }
+  }
 }
-.select-wrap{
-  //font-size:1.4em;
-}
+
