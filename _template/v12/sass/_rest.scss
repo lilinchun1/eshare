@@ -125,34 +125,51 @@ button.disable{
 }
 
 /*input输入框*/
+input[type="text"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 0;
+}
 %input-text{
   height: 30px;
   border: 1px solid $border-color;
   font-size: 1.2em;
-  text-indent: 8px;
+  text-indent: 1em;
   display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 0;
 }
 @media screen and (min-width: 768px){
   %input-text{
     height: 60px;
     border: 1px solid $border-color;
     font-size: 2.2em;
-    text-indent: 16px;
   }
 }
 
 /*textarea 文本框*/
+textarea{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 0;
+}
 %input-textarea{
   border: 1px solid $border-color;
   font-size: 1.2em;
-  text-indent: 8px;
+  text-indent: 1em;
   display: block;
 }
 @media screen and (min-width: 768px){
   %input-textarea{
     border: 1px solid $border-color;
     font-size: 2.2em;
-    text-indent: 16px;
     display: block;
   }
 }
@@ -213,10 +230,12 @@ input[type="checkbox"]:checked {
     width: 30px;
     height: 30px;
     border-left: 1px solid $border-color;
-    background: #f9f9f9;
+    background: url(../img/iconfont-down.png) 50% 50% no-repeat;
+    -webkit-background-size: 18px auto;
+    background-size: 18px auto;
   }
   .icon-arrow-down{
-    margin: 6px 0 0 6px;
+    margin: 5px 0 0 5px;
     width: 20px;
     height: 20px;
     fill: #bcbcbd;
@@ -227,15 +246,17 @@ input[type="checkbox"]:checked {
     height: 60px;
     .select-draw-con {
       height: 60px;
-      font-size: 1.4em;
+      font-size: 1em;
       color:#999;
     }
     .logo {
       width: 60px;
       height: 60px;
+      -webkit-background-size: 35px auto;
+      background-size: 35px auto;
     }
     .icon-arrow-down{
-      margin: 12px 0 0 12px;
+      margin: 11px 0 0 11px;
       width: 40px;
       height: 40px;
     }
@@ -394,7 +415,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     right: 14px;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: 20px;
     line-height: 20px;
     text-align: center;
     font-size: 1em;
@@ -404,11 +425,11 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   .foot-nav-icon{
     fill: currentColor;
     position: absolute;
-    top: 6px;
+    top: 12px;
     left: 50%;
-    margin-left: -13px;
-    width: 26px;
-    height: 26px;
+    margin-left: -9px;
+    width: 18px;
+    height: 18px;
     display: block;
   }
   .foot-nav-tt{
@@ -443,7 +464,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     background: $color-red;
   }
   .icon-iconfont-left{
-    margin: 10px 10px 0 12px;
+    margin: 15px 10px 0 12px;
     float: left;
     fill: #535353;
     width: 14px;
@@ -566,15 +587,16 @@ input[type="button"], input[type="submit"], input[type="reset"] {
       width: 30px;
       height: 30px;
       line-height: 30px;
+      border-radius: 30px;
     }
     .foot-nav-icon{
       fill: currentColor;
       position: absolute;
-      top: 12px;
+      top: 30px;
       left: 50%;
-      margin-left: -26px;
-      width: 52px;
-      height: 52px;
+      margin-left: -17px;
+      width: 34px;
+      height: 34px;
       display: block;
     }
 
@@ -591,7 +613,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
       background: $color-red;
     }
     .icon-iconfont-left{
-      margin: 20px 20px 0 24px;
+      margin: 30px 20px 0 24px;
       float: left;
       fill: #535353;
       width: 30px;

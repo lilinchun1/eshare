@@ -100,7 +100,7 @@ $color-red:#e02d2a;
 /*textarea 文本框*/
 %input-textarea{
   border: 1px solid $border-color;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-indent: 8px;
   display: block;
   font-family: "Microsoft YaHei";
@@ -246,6 +246,7 @@ html {
 
 body {
   line-height: 1.5;
+
   color: $font-normal-999;
   height: 100%;
 
@@ -305,8 +306,9 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 
 /*index.html*/
 .box-wrap {
-  width: 100%;
+  width: 94%;
   background:#fff;
+  margin: 0px 3%;
   .ta-c{
     text-align: center;
   }
@@ -336,7 +338,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     right: 0;
     width: 34px;
     height: 34px;
-    border-radius: 4px;
+    border-radius: 2px;
     background: #ef9a16 6px;
     a {
       margin: 5px 0 0 6px;
@@ -382,11 +384,11 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 .shop-level {
   margin-top: 12px;
   width: 82px;
-  font-size: 1.2em;
+  font-size: 1.4em;
   height: 22px;
   line-height: 22px;
   background: #f7774a;
-  border-radius: 4px;
+  border-radius: 2px;
   overflow: hidden;
   .shop-level-l img{width:18px;
     margin-top: 2px;
@@ -437,7 +439,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   right: 0;
   width: 34px;
   height: 34px;
-  border-radius: 4px;
+  border-radius: 2px;
   background: #ef9a16;
   overflow: hidden;
   a {
@@ -1226,8 +1228,8 @@ li {
   @include item-wrap-mod($bg-normal, $bd-color-f3);
 }
 .bottom-line{
+  border-bottom: 1px solid red;
 
-  border-bottom: 1px solid $bd-color-f3;
   overflow: hidden;
   display: block;
 }
@@ -1239,7 +1241,7 @@ li {
   line-height: 54px;
   em {
     float: left;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: $font-color-333;
 
   }
@@ -1355,7 +1357,7 @@ li {
   color: #999999;
   font-size: 1.4em;
   border: 1px solid $bd-color-f3;
-  border-radius: 4px;
+  border-radius: 2px;
   background: $bg-wrap;
   &:before {
     content: "";
@@ -1392,7 +1394,7 @@ li {
   color: #999999;
   font-size: 1.4em;
   border: 1px solid $bd-color-f3;
-  border-radius: 4px;
+  border-radius: 2px;
   background: $bg-wrap;
   &:before {
     content: "";
@@ -1430,7 +1432,7 @@ li {
   color: #999999;
   font-size: 1.4em;
   border: 1px solid $bd-color-f3;
-  border-radius: 4px;
+  border-radius: 2px;
   background: $bg-wrap;
   &:before {
     content: "";
@@ -1652,7 +1654,7 @@ li {
   color: #999999;
   font-size: 1.4em;
   border: 1px solid $bd-color-f3;
-  border-radius: 4px;
+  border-radius: 2px;
   background: $bg-wrap;
   &:before {
     content: "";
@@ -1688,9 +1690,9 @@ li {
   text-align: center;
   width: 65%;
   color: #999999;
-  font-size: 1.2em;
+  font-size: 1.4em;
   border: 1px solid $bd-color-f3;
-  border-radius: 4px;
+  border-radius: 2px;
   background: $bg-wrap;
   &:before {
     content: "";
@@ -1728,6 +1730,7 @@ li {
   .schedule-item-tt {
     height: 76px;
     line-height: 76px;
+
     em {
       font-size: 1.8em;
     }
@@ -1755,7 +1758,7 @@ li {
     color: #999999;
     font-size: 1.4em;
     border: 1px solid $bd-color-f3;
-    border-radius: 4px;
+    border-radius: 2px;
     background: $bg-wrap;
     &:before {
       content: "";
@@ -1793,7 +1796,7 @@ li {
     color: #999999;
     font-size: 1.8em;
     border: 1px solid $bd-color-f3;
-    border-radius: 4px;
+    border-radius: 2px;
     background: $bg-wrap;
     &:before {
       content: "";
@@ -1823,6 +1826,7 @@ li {
     width: 90%;
     margin: 0 auto;
     font-size:2em;
+    padding:0px 10px;
     li{
       line-height: 60px;
     }
@@ -2048,7 +2052,7 @@ li {
         p {
           margin-top:5px;
           color: $font-color-666;
-          font-size: 1.2em;
+          font-size: 1.4em;
           line-height:140%;
           display: block;
           height:50%;
@@ -2089,7 +2093,7 @@ li {
     width:30%;
     float:right;
     text-align:right;
-    font-size: 1.2em;
+    font-size: 1.4em;
 
     padding-top:6px;
   }
@@ -2118,7 +2122,7 @@ li {
   display: block;
   font-size: 1.4em;
   border: 1px solid #bcbcbc;
-  border-radius: 4px;
+  border-radius: 2px;
   background: transparent;
   color: $font-normal-999;
 }
@@ -2333,6 +2337,10 @@ li {
   }
   h3{
     span{
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      margin-top: 3px;
       color: #ffae00;
     }
   }
@@ -2357,13 +2365,17 @@ li {
   background: #fff;
   li{
     height: auto;
+    //background: url(../img/icon/right-s-line1.png) no-repeat;
+    h3{
+      width: 90%;
+    }
   }
   .shop-list-item-info {
     padding-bottom: 8px;
     border-bottom: 1px solid $bd-color-f3;
     overflow: hidden;
-    background: image-url("icon/right-s-line.png") 100% 56% no-repeat;
-    background-size: 7px auto;
+    background: url("../img/icon/right-s-line1.png") 100% 50% no-repeat;
+    background-size:30px auto;
   }
   .shop-list-item-number {
     height: 44px;
@@ -2430,6 +2442,8 @@ li {
 }
 .faq-wrap{
   margin: 0 auto;
+  width: 94%;
+  margin: 0 3%;
   @extend %show-wrap;
   background: #fff;
   overflow: hidden;
@@ -2543,7 +2557,7 @@ li {
 .draw-money-btn3{
   width: 100%;
   height: 34px;
-  border-radius: 4px;
+  border-radius: 2px;
 
   color: #fff;
   font-size: 1.4em;
@@ -2556,7 +2570,7 @@ li {
 .draw-money-btn33{
   width: 100%;
   height: 34px;
-  border-radius: 4px;
+  border-radius: 2px;
   background: $font-color-red;
   color: #fff;
   font-size: 1.4em;
@@ -2570,7 +2584,7 @@ li {
 .draw-money-btn333{
   width: 100%;
   height: 34px;
-  border-radius: 4px;
+  border-radius: 2px;
   background: $font-color-red;
   color: #fff;
   font-size: 1.4em;
@@ -2633,7 +2647,7 @@ li {
   .draw-money-btn33{
 
     height: 68px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: normal;
     border: 0 none;
     -webkit-appearance: none;
@@ -2772,7 +2786,7 @@ li {
   height: 25px;
   margin-top: 10px;
   border: 1px solid $font-color-red;
-  border-radius: 4px;
+  border-radius: 2px;
   color: $font-normal-999;
   display: block;
   font-size: 1em;
@@ -2814,7 +2828,7 @@ li {
   .mode-btn{
     width: 138px;
     height: 50px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-top:20px;
 
   }
@@ -2913,7 +2927,7 @@ li {
   background: #d0d0d0;
 }
 .revise-shop-ps{
-  font-size: 1.6em;
+  font-size: 9.4em;
   color: #c2c2c2;
 }
 .my-bank-alert {
@@ -2931,7 +2945,7 @@ li {
     margin: 0 auto;
     padding:0;
     width: 69%;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .close {
     position: absolute;
@@ -2956,7 +2970,7 @@ li {
     padding:0;
     width: 69%;
     line-height:300%;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .close {
     position: absolute;
@@ -3005,13 +3019,20 @@ li {
     }
   }
 }
-
+.box-wrap2{
+  width: 100%;
+   background: #fff;
+}
+.box-wrap3{
+  width: 100%;
+}
 
 .change-bank-wrap{
   padding-bottom: 10px;
   margin: 0 auto;
+  width: 94%;
   .revise-shop-ps{
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #c2c2c2;
   }
   @extend %show-wrap;
@@ -3042,6 +3063,7 @@ li {
 .change-bank-attention {
   padding: 16px 0;
   margin-top: 10px;
+  font-size: 0.8em;
   width: 99%;
   @include item-wrap-mod($bg-normal,$bd-color-f3);
   display: block;
@@ -3060,7 +3082,7 @@ li {
 @media screen and (min-width: 768px){
   .change-bank-wrap{
     .revise-shop-ps{
-      font-size: 1.6em;
+      font-size: 2em;
       color: #c2c2c2;
     }
     h2{
@@ -3452,17 +3474,18 @@ min-height: 300px;
   background-size: 42px auto;
 }
 .contact-us-wrap{
+
   margin: 0 auto;
   @extend %show-wrap;
 }
 .contact-us-item{
   margin: 10px 0;
-  padding: 10px 0;
+
   @include item-wrap-mod($bg-normal,$bd-color-f3);
     p{
       margin: 0 auto;
       @extend %show-wrap;
-      padding: 10px 0;
+      padding:5px 10px;
       font-size: 1.4em;
       color: $font-color-666;
     }
@@ -3472,7 +3495,7 @@ min-height: 300px;
     margin:0 auto;
   }
     h2 {
-      padding: 10px 0;
+      padding: 10px 10px;
       margin: 0 auto;
       @extend %show-wrap;
       color: $font-color-333;
@@ -3490,7 +3513,7 @@ min-height: 300px;
 .contact-us-input{
   margin: 10px auto;
   width: 94%;
-  border-radius: 4px;
+  border-radius: 2px;
   border: 1px solid $bd-color-f3;
   display: block;
   color:red;
@@ -3498,8 +3521,8 @@ min-height: 300px;
 .input-textarea{
   @extend %input-textarea;
   padding: 10px 0;
-  margin: 0 auto;
-  @extend %show-wrap;
+  margin: 10px;
+  width: 94%;
 }
 .contact-us-item .font-color-red{
   color: #bb0000;
@@ -3540,6 +3563,10 @@ min-height: 300px;
   .input-textarea{
     font-size: 2.2em;
   }
+}
+.c-b{
+  width: 94%;
+  margin: 3%;
 }
 .system-setting-list{
   margin: 0 auto;
@@ -3641,7 +3668,7 @@ min-height: 300px;
 }
 .find-password{
   float:right;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 300%;
   a{
     color:#016cc6;
@@ -3649,7 +3676,7 @@ min-height: 300px;
   }
 .register-shop{
   float:left;
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 300%;
   a{
     color:$font-color999;
@@ -3669,7 +3696,7 @@ min-height: 300px;
     float: right;
   }
   .register-btn4{
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-top:14px;
   }
 

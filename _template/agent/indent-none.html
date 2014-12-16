@@ -8,29 +8,77 @@
 <meta content="telephone=no" name="format-detection">
 <meta name="format-detection" content="telephone=no">
 <title>订单管理</title>
-<link rel="stylesheet" href="../v12/css/index.css"/>
+    <link rel="stylesheet" href="../v12/css/index.css" >
+    <link rel="stylesheet" href="../v12/css/gl-index.css" >
+    <link rel="stylesheet" href="../v12/css/error.css"/>
 </head>
 <body>
-<div class="box-wrap wrap-bg">
-<section class="indent-wrap">
-<div class="indent-tool">
-    <ul class="indent-tool-list">
-        <li class="active">全 部<span>(42)</span></li>
-        <li>待付款
-            <span>(42)</span></li>
-        <li>待发货<span>(42)</span></li>
-        <li>已发货<span>(42)</span></li>
-
-    </ul>
+<ul class="order-top">
+    <li class="r-b r-h"><a href="">全部(<span>8</span>)</a> </li>
+    <li class="r-b"><a href="">待付款(<span>8</span>)</a> </li>
+    <li class="r-b"><a href="">待发货(<span>8</span>)</a> </li>
+    <li><a href="">已发货(<span>8</span>)</a> </li>
+</ul>
+<div class="collection-none">
+    <img src="../v12/img/order-none.png">
+    <p>暂时没有订单！</p>
 </div>
-<div class="indent-state indent-show-none">
-    暂无内容
-</div>
-
-<footer class="foot">
+<footer class="footer">
     易享科技出品
 </footer>
-</section>
+<!--底部导航 开始-->
+<div class="mod-foot-nav" id="ftsh">
+    <ul class="foot-nav-list"  id="ftsh1">
+        <li>
+            <a href="#ftsh">
+                <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontsearch"></use></svg>
+                搜 索
+            </a>
+        </li>
+        <li class="flg-icon">
+            <a href="">
+                <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfonthome"></use></svg>
+                首 页
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontmy"></use></svg>
+                用户中心
+            </a>
+            <span>77</span>
+        </li>
+        <li>
+            <a href="">
+                <svg class="foot-nav-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontcart"></use></svg>
+                购物车
+            </a>
+            <span>12</span>
+        </li>
+    </ul>
+    <div class="search" id="ftsh1">
+        <a href="#ftsh1"><svg class="icon-iconfont-left"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-left"></use></svg></a>
+        <div class="search-input-wrap">
+            <input class="search-input" placeholder="搜索您想要的商品" type="text"/>
+            <svg class="search-log"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontsearch"></use></svg>
+        </div>
+        <button class="search-btn">搜索</button>
+    </div>
 </div>
+<!--底部导航 结束-->
+
+<!--侧边栏 开始-->
+<ul class="aside-item">
+    <li>
+        <svg class="aside-item-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontmessage"></use></svg>
+    </li>
+    <li>
+        <svg class="aside-item-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-iconfontphone"></use></svg>
+    </li>
+    <li>
+        <svg class="aside-item-icon"><use xlink:href="../v12/img/svg/svgdefs.svg#icon-iconfont-up"></use></svg>
+    </li>
+</ul>
+<!--侧边栏 结束-->
 </body>
 </html>
