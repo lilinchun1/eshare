@@ -49,10 +49,11 @@ define('DBPRE',($config['db'][1]['dbname']).'`.`'.($config['tablepre']));
 /* 微信支付 */
 define('WXPAY_APPID',$config['wxpay']['appid']);
 define('WXPAY_APPSECRET',$config['wxpay']['appsecret']);
+define('PAGE_SIZE',$config['page']['pagesize']);
 
 
 //团购指定商品id
-define('GROUP_GOODS_ID', 295);
+define('GROUP_GOODS_ID', 298);
 
 
 $_GET['act'] = $_GET['act'] ? strtolower($_GET['act']) : ($_POST['act'] ? strtolower($_POST['act']) : null);

@@ -14,7 +14,9 @@ $(window).scroll(function () {
             dataType: "json",
             type: 'get',
             data:{'pageNum':pageNum},
-            success: function (goods_list) {   //成功后回调
+            success: function (data) {   //成功后回调
+                var goods_list=data['goods_list'];
+                var agent_id=data['agent_id'];
                 $.each(goods_list, function (key, val) {
                     pageCount =val['pageCount'];//总页数
                     var image_url=val['goods_image_url'];//图片地址
@@ -22,17 +24,22 @@ $(window).scroll(function () {
                     var goods_name=val['goods_name'];//标题
                     var goods_price=val['goods_price'];//价格.
                     var goods_marketprice=val['goods_marketprice'];//原价
+                    var goods_id=val['goods_id'];//商品ID
                     $(".shop-item-wrap").append(
                             "<div class='shop-item'>" +
                             "<div class='shop-item-pic'>" +
+                            "<a  href='"+WapSiteUrl+"/index.php?act=product&goods_id="+goods_id+"&agent_id="+agent_id+"'>"+
                             "<img src='"+image_url+"'/>" +
+                            "</a>"+
                             "<span class='tj-logo'>特价</span>" +
                             "</div>" +
                             "<h2 class='shop-item-tt'><span></span>"+goods_name+"</h2>" +
                             "<div class='shop-item-buy'>" +
                             "<em><span>￥</span>"+goods_price+"</em>" +
                             "<i>原价：￥"+goods_marketprice+"</i>" +
+                            "<a href='"+WapSiteUrl+"/tmpl/order/buy_step1.html?goods_id="+goods_id+"&buynum=1'>"+
                             "<button class='shop-item-btn'>立即购买</button>" +
+                            "</a>"+
                             "</div>" +
                             "</div>");
                 });

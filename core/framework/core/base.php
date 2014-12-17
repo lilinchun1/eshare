@@ -35,10 +35,10 @@ final class Base{
 
 	    //session start
 	    self::start_session();
-	    
+
 	    //output to the template
 	    Tpl::output('setting_config',$setting_config);
-	    
+
 	    //read language
 	    Language::read('core_lang_index');
 	}
@@ -129,15 +129,15 @@ final class Base{
 		if ($subdomain_suffix !== 'localhost') {
 		    @ini_set('session.cookie_domain', $subdomain_suffix);
 		}
- 
+
 		//开启以下配置支持session信息存信memcache
 		ini_set("session.cookie_httponly", 1);
-		ini_set("session.save_handler", "memcache");
-		ini_set("session.save_path", C('memcache.1.host').':'.C('memcache.1.port'));
+		//ini_set("@session.save_handler", "memcache");
+		//ini_set("session.save_path", C('memcache.1.host').':'.C('memcache.1.port'));
 
 		//默认以文件形式存储session信息
-		//session_save_path(BASE_DATA_PATH.'/session');
-		session_start();
+		session_save_path(BASE_DATA_PATH.'/session');
+		@session_start();
 	}
 
 	public static function autoload($class){
@@ -166,6 +166,6 @@ final class Base{
 	 *
 	 */
 	private static function cp(){
-		return;	
+		return;
 	}
 }

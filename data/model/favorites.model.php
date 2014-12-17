@@ -182,4 +182,18 @@ class favoritesModel extends Model{
 		}
 		return $condition_str;
 	}
+	/**
+	 * 
+	 * @param unknown $member_id
+	 * @param unknown $fav_type
+	 * @param unknown $fav_id
+	 */
+	function favorites_detailed($member_id,$fav_type,$fav_id){
+		$que = array();
+		if($member_id && $fav_type && $fav_id){
+			$sql = "SELECT * FROM shopnc_favorites WHERE member_id = $member_id AND fav_type = '$fav_type' AND fav_id = $fav_id";
+			$que = $this->query($sql);
+		}
+		return $que[0]?1:0;
+	}
 }

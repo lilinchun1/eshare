@@ -178,7 +178,7 @@ input[type="checkbox"] {
   width: 12px;
   height: 12px;
   border: 1px solid $border-color;
-  border-radius: 50%;
+  border-radius: 12px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -266,6 +266,17 @@ input[type="checkbox"]:checked {
 
 /*顶部弹框*/
 .my-bank-alert {
+  a{
+    color:#fff;
+    span{
+      float: left;
+    }
+    img{
+      width: 12px;
+      padding-top:4px;
+      float: left;
+    }
+  }
   padding: 5px 0;
   position: fixed;
   top: 0;
@@ -280,7 +291,7 @@ input[type="checkbox"]:checked {
     margin: 0 auto;
     padding:0;
     width: 69%;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .close {
     position: absolute;
@@ -291,6 +302,17 @@ input[type="checkbox"]:checked {
 }
 @media screen and (min-width: 768px){
   .my-bank-alert{
+    a{
+      color:#fff;
+      span{
+        float: left;
+      }
+      img{
+        width: 22px;
+        padding-top:4px;
+        float: left;
+      }
+    }
     background-color: rgba(0, 0, 0, .7);
     background-image: image-url("icon_2x/alert.png");
     background-repeat: no-repeat;
@@ -387,6 +409,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   text-align: center;
   font-size: 1.2em;
   color: #a7a7a7;
+  clear:both;
 
 }
 .mod-foot-nav{

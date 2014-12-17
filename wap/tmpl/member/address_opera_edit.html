@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新玉麟</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/member.css">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+       <div class="sub_top border_w">
+  <div class="border_g"> <a href="javascript:history.go(-1);">返回</a><div class="gy_top">编辑地址</div> </div>
+</div>
+    <div class="address-opera iadd-hightadd">
+        <div class="address-ocnt">
+            <div class="address-octlt">收货人信息</div>
+            <p>姓名：<span class="opera-tips">(*必填)</span></p>
+            <p>
+                <input type="text" class="input-30 iadd-hight" id="true_name" name="true_name"/>
+            </p>
+            <p>手机号码：<span class="opera-tips">(*必填)</span></p>
+            <p>
+                <input type="text" class="input-30 iadd-hight" id="mob_phone" name="mob_phone"/>
+            </p>
+            <p>电话号码：</p>
+            <p>
+                <input type="text" class="input-30 iadd-hight" name="tel_phone"/>
+            </p>
+            <div class="address-octlt">地址信息</div>
+            <p><span id="detailaddr" class="mr5"></span></p>
+            <p class="detail-d-addr"></p>
+            <p><a href="javascript:;" class="btn-s btn-prink-s" id="editaddress">编辑</a><input type="hidden" name="modifyaddr" value="1"></p>
+            <div id="area" style="display:none;">
+	            <p>省份：<span class="opera-tips">(*必填)</span></p>
+	            <div class="new-select-wp" id="prov">
+			        <select class="select-30 iadd-hight" id="prov_select" name="prov">
+						<option value="">请选择...</option>
+			        </select>	
+	            </div>
+	            <p>城市：<span class="opera-tips">(*必填)</span></p>
+	            <div class="new-select-wp" id="city">
+			 		<select class="select-30 iadd-hight" id="city_select" name="city">
+						<option value="">请选择...</option>
+			        </select>           	
+	            </div>
+	            <p>区县：<span class="opera-tips">(*必填)</span></p>
+	            <div class="new-select-wp" id="region">
+			       	<select class="select-30 iadd-hight" id="region_select" name="region">
+						<option value="">请选择...</option>
+			        </select>
+	            </div>
+		        <p>详细地址：<span class="opera-tips">(*必填)</span></p>
+	            <p>
+                <input type="text" class="n-input h22 wp100 iadd-hight" name="address" id="address">
+	               <!--  <textarea class="normal-textarea address h100 wp100 iadd-hightadd" id="address" name="address"></textarea> -->
+	            </p>
+            </div>
+        </div>
+        <input type="hidden" name="area_id">
+        <input type="hidden" name="city_id">
+        <input type="hidden" name="area_info">
+        <input type="hidden" name="address">
+        <div class="error-tips"></div>
+        <a class="add_address mt10 iadd-hightadd" href="javascript:;">保存地址</a>
+    </div>
+    <script type="text/javascript" src="../../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../../js/config.js"></script>
+    <script type="text/javascript" src="../../js/template.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    <script type="text/javascript" src="../../js/simple-plugin.js"></script>
+    <script type="text/javascript" src="../../js/tmpl/common-top.js"></script>
+    <script type="text/javascript" src="../../js/tmpl/footer.js"></script>
+    <script type="text/javascript" src="../../js/tmpl/address_opera_edit.js"></script>
+        <!-- zhangyating 2014-9-22 修改 通用的分享功能-->
+<script type="text/javascript" src="../../js/tmpl/shareWx.js"></script>
+<!-- zhangyating 2014-9-22 修改 end -->
+<!-- zhangxuanliang 2014-9-24 修改 站长统计功能-->
+<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F921b4696aec0527b77e8a3edc6d65da1' type='text/javascript'%3E%3C/script%3E"));</script>
+<!-- zhangxuanliang 2014-9-24 修改 end -->
+</body>
+</html>

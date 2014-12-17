@@ -182,7 +182,13 @@ class cartModel extends Model {
 	public function listCart($type, $condition = array()) {
         if ($type == 'db') {
     		$cart_list = $this->where($condition)->order("cart_id DESC")->select(array('cache'=>false));
-			//print_r($cart_list);
+			
+			//qinwei v1.2.1 2014-12-16 新版购物车 增加库存 规格等信息
+			foreach($cart_list as $k=>$v){
+				$cart_list[$k]['info'] = Model('goods')->getGoodsOnlineInfo(array('goods_id'=>$v['goods_id']));
+			}
+			//end
+			
         } elseif ($type == 'cache') {
             $obj_cache = Cache::getInstance(C('cache.type'));
             $cart_list = $obj_cache->get($_COOKIE['PHPSESSID'],'cart_');
@@ -354,6 +360,7 @@ class cartModel extends Model {
 	 * @return array
 	 */
 	public function getGoodsOnlineInfo($goods_id,$quantity) {
+		
 	    //取目前在售商品
 	    $goods_info = Model('goods')->getGoodsOnlineInfo(array('goods_id'=>$goods_id));
 	    if(empty($goods_info)){
@@ -375,7 +382,19 @@ class cartModel extends Model {
 	    $new_array['goods_storage'] = $goods_info['goods_storage'];
 	    $new_array['state'] = true;
 	    $new_array['storage_state'] = intval($goods_info['goods_storage']) < intval($quantity) ? false : true;
-
+		
+		//qinwei 2014-12-25 V1.21  规格
+		if(empty($goods_info['goods_spec'])){
+			$new_array['goods_spec'] = '';
+		}else{
+			$goods_spec = unserialize($goods_info['goods_spec']);
+			foreach($goods_spec as $v){
+				$new_array['goods_spec'] = $v;
+			}
+		}
+		
+		//end 
+		
 	    //填充必要下标，方便后面统一使用购物车方法与模板
 	    //cart_id=goods_id,优惠套装目前只能进购物车,不能立即购买
 	    $new_array['cart_id'] = $goods_id;

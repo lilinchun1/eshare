@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background:#f5f5f5; font-family:Zaozi}
+h3{text-align:center;color:#d9534f;}
+@font-face{
+	font-family:Zaozi;
+	src:url(../text/SIMYOU.TTF);
+}
+.show{box-shadow: 0px 1px 2px #999;
+	-moz-box-shadow: 0px 1px 2px #999;
+	-webkit-box-shadow: 0px 1px 2px #999;
+	-o-box-shadow: 0px 1px 2px #999;}
+.ins{margin-bottom:40px; width:100%;}
+.ins tr:first-child{font-size:24px; line-height:50px; height:50px; background:#d9534f;color:#fff;}
+.ins table{ margin:0 auto;color:#666;border-collapse:collapse;}
+.ins th{border-bottom:1px solid #d9534f;}
+.blue{overflow:hidden; background:#fe9c99;}
+.blue span{display:block; width:33%; float:left}
+.wierd{background:#fff; overflow:hidden; line-height:40px;}
+.wierd span{ display:block; width:33%; float:left}
+.wie{background:#fff;}
+.wer{background:#fff;}

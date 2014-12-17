@@ -186,6 +186,9 @@ class orderModel extends Model {
     	//只显示一个 
     	$spec_name = $this->table('goods_common')->field('spec_value')->where(array('goods_commonid'=>$goods_commonid['goods_commonid']))->find();
     	$spec_name_arr_value = @unserialize($spec_name['spec_value']);
+		
+		is_array($spec_name_arr_value = $spec_name_arr_value)?null:$spec_name_arr_value = array();
+		
     	foreach($spec_name_arr_value as $v){
     		foreach($v as $value){
     			$norms = $value;

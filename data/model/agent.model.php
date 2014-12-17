@@ -36,6 +36,19 @@ class agentModel extends Model {
         //$result = $this->field($field)->where($condition)->order($order)->limit($limit)->page($page)->select();
         return $result;
     }
+    /**
+     * 根据代理商id字符串获取相关信息
+     * @param unknown $agent_id_str
+     */
+    public function getAgentMemberList($agent_id_str){
+    	$where = " where a.member_id in ($agent_id_str)";
+    	$sql = "
+    			SELECT b.agent_id,a.member_avatar,b.agent_name FROM shopnc_member a
+				LEFT JOIN shopnc_agent b ON a.member_id = b.agent_id
+    			$where
+    			";
+    	return $this->query($sql);
+    }
 
 	/**
 	 * 查询有效店铺列表

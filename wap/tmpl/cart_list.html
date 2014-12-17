@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新玉麟</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/child.css">
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/config.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="sub_top border_w">
+  <div class="border_g"> <a href="javascript:history.go(-1);">返回</a><div class="gy_top">购物车</div> </div>
+</div>
+        <div class="cart-list-wp">
+            <div id="cart-list-wp"></div>
+            <script type="text/html" id="cart-list">
+            <% if(cart_list.length >0){%>
+                <ul class="cart-list">
+                    <% for (var i = 0;i<cart_list.length;i++){%>
+                        <li class="cart-list-item iadd-hightadd">
+                            <div class="cart-shop-name">
+                                店铺名称：<%=agent_info.agent_name%>
+                            </div>
+                            <div class="cart-litem-wp clearfix">
+                                <a class="cart-litemw-imgwp" href="<%=WapSiteUrl%>/index.php?act=product&goods_id=<%=cart_list[i].goods_id%>">
+                                    <img src="<%=cart_list[i].goods_image_url%>"/>
+                                </a>
+                                <div class="cart-litemw-cnt" cart_id="<%=cart_list[i].cart_id%>">
+                                    <a class="cart-litemwc-pdname" href="<%=WapSiteUrl%>/index.php?act=product&goods_id=<%=cart_list[i].goods_id%>">
+                                        <%=cart_list[i].goods_name%>
+                                    </a>
+                                    <p class="mt5">
+                                        商品单价：<span class="clr-d94"><%=cart_list[i].goods_price%></span>
+                                    </p>
+                                     <p class="mt5">
+                                        商品总价：<span class="clr-d94 goods-total-price"><%=cart_list[i].goods_sum%></span>
+                                    </p>
+                                    <p class="cart-litemwc-pdcount clearfix mt5">
+                                        <span class="minus-wp fleft">
+                                            <span class="i-minus"></span>
+                                        </span>
+                                        <input type="text" class="buy-num buynum fleft" value="<%=cart_list[i].goods_num%>"/>
+                                        <span class="add-wp fleft">
+                                            <span class="i-add"></span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="cart-list-del" cart_id="<%=cart_list[i].cart_id%>">
+                                <span class="i-del"></span>
+                            </span>
+                        </li>
+                    <%}%>
+                    <li class="cart-list-oitem mt10 iadd-hightadd">
+                        商品总金额：<span class="clr-d94 total_price"><%=sum%></span>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="goto-settlement mt10">去结算</a>
+                    </li>
+                    <li>
+                        <a href="<%=WapSiteUrl%>/index.php?agent_id=<%=agent_id%>" class="goto-shopping mt10">去逛逛</a>
+                        <br/> <br/> <br/>
+                    </li>
+                </ul>
+            <%}else{%>
+                <div class="no-record m10">
+                    暂无记录
+                </div>
+            <%}%>
+            </script>
+        </div>
+    </div>
+    <div class="strip_top position topBox ">
+    <ul class="ul">
+      <li class="left right"> <a href="../tmpl/member/member.php?act=member">
+        <div class="pro_pen"></div>
+        <div class="pro_sea_1">用户中心</div>
+        </a> </li>
+      <li class="left"> <a>
+        <div class="pro_car"></div>
+        <div class="pro_sea_1">购物车</div>
+        </a> </li>
+    </ul>
+  </div>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/simple-plugin.js"></script>
+    <script type="text/javascript" src="../js/tmpl/common-top.js"></script>
+    <script type="text/javascript" src="../js/tmpl/footer.js"></script>
+    <script type="text/javascript" src="../js/tmpl/cart-list.js"></script>
+<!-- zhangyating 2014-9-22 修改 通用的分享功能-->
+<script type="text/javascript" src="../js/tmpl/shareWx.js"></script>
+<!-- zhangyating 2014-9-22 修改 end -->
+<!-- 红点js zyt-->
+<script type="text/javascript" src="../js/red_point.js"></script>
+<!-- 红点js -->
+<!-- zhangxuanliang 2014-9-24 修改 站长统计功能-->
+<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F921b4696aec0527b77e8a3edc6d65da1' type='text/javascript'%3E%3C/script%3E"));</script>
+<!-- zhangxuanliang 2014-9-24 修改 end -->
+</body>
+</html>

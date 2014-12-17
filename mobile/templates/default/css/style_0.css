@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0; padding:0; background:#ededed;font:100%/1.4 Verdana, Arial, Helvetica, sans-serif;}
+li{list-style:none; margin:0; padding:0;}
+a{text-decoration:none; margin:0 ; padding:0;}
+input{margin:0; padding:0; border:none}
+ul{margin:0; padding:0;}
+@media screen and (min-width:640px){
+.min{margin:0 auto; width:640px;}
+}
+@media screen and (max-width:440px){
+.product_1 img{width:30%;}
+.product_2{width:62%;}
+.pro_2{width:3%;}
+}
+/*共有*/
+.topBox{border-bottom:1px solid #dbdbdb; background:#f5f5f5; margin:0;}
+.top{width:96%; margin:0 auto; padding-top:3%; overflow:hidden; margin-bottom:3%;}
+.strip{border-bottom:#f5f5f5 1px solid;}
+.margin{margin-top:12px;}
+.right{border-right:1px solid #ffffff;}
+.left{border-left:1px solid #e4e4e4;}
+.strip_top{border-top:1px solid #dbdbdb;}
+.yixiangBox{color:#666;font:80%/1.0 Verdana, Arial, Helvetica, sans-serif;}
+.yixiang{position:fixed; bottom:10px;text-align:center; width:100%}
+/*登陆*/
+.input{width:90%; margin:0 auto; margin-top:10%; border:1px solid #dbdbdb; border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;-o-border-radius:10px;-ms-border-radius:10px;}
+.input_0{background:#f6f6f6;}
+.input_1{width:96%; margin:0 auto; border-bottom:1px solid #dbdbdb; padding-top:10px; padding-bottom:10px;}
+.input_2{width:96%; margin:0 auto; border-top:1px solid #fff; padding-top:10px; padding-bottom:10px;}
+/**/
+.width{width:90%; margin:0 auto; margin-top:8%;}
+.red{width:100%;border-radius:10px; display:block; color:#fff; text-shadow:0px 1px 2px #b35100; line-height:35px; text-align:center; background:#f37400;-webkit-border-radius:10px;-moz-border-radius:10px;-o-border-radius:10px;-ms-border-radius:10px;}
+.green{width:100%;border-radius:10px; display:block; color:#fff; text-shadow:0px 1px 2px #529c02; line-height:35px; text-align:center; background:#6cce02;-webkit-border-radius:10px;-moz-border-radius:10px;-o-border-radius:10px;-ms-border-radius:10px; margin-top:3%;}
+.red:hover{background:#ff5400; color:#f5f5f5;}
+.green:hover{background:#73b52b;color:#f5f5f5;}
+
+/*search 搜索框 */
+.search_1{border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;-o-border-radius:15px;-ms-border-radius:15px; width:75%; float:left; background:#e3e3e3; height:35px; }
+.search_1 img{margin:0 auto; margin-top:7px; margin-left:5px; float:left;}
+.search_1 input{float:left;}
+.search_2{ background:#e3e3e3; margin-top:10px; float:100%/1.0 Verdana, Arial, Helvetica, sans-serif; border:none; color:#a49f9f; border-left:1px #cacaca solid; padding-left:5px; border-radius:none;}
+.search_3{float:right; margin-right:5%; line-height:35px;}
+.search_3 a{color:#848484;}
+/*logo*/
+.top img{float:left;}
+.characterBox{float:left; margin-left:3%;}
+.character{ color:#000000; line-height:40px;}
+/* ul */
+.topBox_1{ background:#f5f5f5; margin:0; overflow:hidden}
+.top_1{width:25%;border-bottom:#f37400 1px solid; float:left; margin:0;color:#ff5400;}
+.top_2{width:25%;border-bottom:#dbdbdb 1px solid; float:left; margin:0;color:#666666;}
+.nav{margin-top:10%; margin-bottom:10%; text-align:center; line-height:30px;}
+.topBox_1 .top_2:hover{border-bottom:#ff5400 1px solid;color:#ff5400;}
+/**/
+.product{width:96%; margin:0 auto;}
+.product_1{ border-bottom:1px solid #e4e4e4; margin-top:2%; overflow:hidden; padding-bottom:2%; position:relative}
+.product_1 img{float:left;}
+.img_1{position:absolute; left:-1px; top:-2px;}
+.img_1 img{width:100%;}
+.product_2{float:left; margin-left:10px; margin-top:7px;}
+.pro{font:90%/1.0 Verdana, Arial, Helvetica, sans-serif; color:#333333;}
+.pro_1{margin-top:3%;font:100%/1.6 Verdana, Arial, Helvetica, sans-serif; color:#ff5400; }
+.pro_1 div{float:left; }
+.pro_1 samp{font:80%/1.0 Verdana, Arial, Helvetica, sans-serif; color:#bababa; margin-left:3px; float:right; margin-top:2%;}
+.pro_2{float:right;color:#666666; margin-top:25px; margin-right:3px;}
+.product_3 {border-top:1px solid #fff; overflow:hidden; color:#666666;font:90%/1.0 Verdana, Arial, Helvetica, sans-serif; }
+.pro_3{width:32%; text-align:center; line-height:25px; padding-top:10px; padding-bottom:10px; float:left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}

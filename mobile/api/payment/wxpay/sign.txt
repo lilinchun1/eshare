@@ -1,0 +1,98 @@
+Array
+(
+    [appId] => wx456c69e53f46bc79
+    [package] => bank_type=2011&discount=0&fee_type=1&input_charset=UTF-8&notify_id=ey2RUywJuCv94X-n88VPV__VQmw7W9jKtXlt_Z0yK8kFBAgSyG_V0m1Dcmf1QohZZWVqMINWC_sSlyw-CsXLBMrz66TN9fWw&out_trade_no=610464298501188052&partner=1220820201&product_fee=1&sign_type=MD5&time_end=20140917194919&total_fee=1&trade_mode=1&transaction_id=1220820201201409173175223350&transport_fee=0 --- 85F172AAB3B33A26C78EFEA0618F569F
+)
+  Array
+(
+    [PROCESSOR_ARCHITEW6432] => AMD64
+    [_FCGI_X_PIPE_] => \\.\pipe\IISFCGI-a105c68a-fec7-4dfb-b825-ad809a9c5e4d
+    [PHP_FCGI_MAX_REQUESTS] => 10000
+    [PHPRC] => C:\Program Files (x86)\PHP\
+    [ALLUSERSPROFILE] => C:\ProgramData
+    [APPDATA] => C:\Windows\system32\config\systemprofile\AppData\Roaming
+    [APP_POOL_CONFIG] => C:\inetpub\temp\apppools\o2oexweixin\o2oexweixin.config
+    [APP_POOL_ID] => o2oexweixin
+    [CommonProgramFiles] => C:\Program Files (x86)\Common Files
+    [CommonProgramFiles(x86)] => C:\Program Files (x86)\Common Files
+    [CommonProgramW6432] => C:\Program Files\Common Files
+    [COMPUTERNAME] => 10_143_70_183
+    [ComSpec] => C:\Windows\system32\cmd.exe
+    [FP_NO_HOST_CHECK] => NO
+    [LOCALAPPDATA] => C:\Windows\system32\config\systemprofile\AppData\Local
+    [NUMBER_OF_PROCESSORS] => 4
+    [OS] => Windows_NT
+    [Path] => C:\Program Files (x86)\PHP\;C:\cygwinroot\usr\local\bin;C:\cygwinroot\bin;C:\cygwinroot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ldaptools;
+    [PATHEXT] => .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+    [PROCESSOR_ARCHITECTURE] => x86
+    [PROCESSOR_IDENTIFIER] => Intel64 Family 6 Model 62 Stepping 4, GenuineIntel
+    [PROCESSOR_LEVEL] => 6
+    [PROCESSOR_REVISION] => 3e04
+    [ProgramData] => C:\ProgramData
+    [ProgramFiles] => C:\Program Files (x86)
+    [ProgramFiles(x86)] => C:\Program Files (x86)
+    [ProgramW6432] => C:\Program Files
+    [PSModulePath] => C:\Windows\system32\WindowsPowerShell\v1.0\Modules\
+    [PUBLIC] => C:\Users\Public
+    [SystemDrive] => C:
+    [SystemRoot] => C:\Windows
+    [TEMP] => C:\Windows\TEMP
+    [TMP] => C:\Windows\TEMP
+    [USERDOMAIN] => WORKGROUP
+    [USERNAME] => 10_143_70_183$
+    [USERPROFILE] => C:\Windows\system32\config\systemprofile
+    [windir] => C:\Windows
+    [windows_tracing_flags] => 3
+    [windows_tracing_logfile] => C:\BVTBin\Tests\installpackage\csilogfile.log
+    [FCGI_ROLE] => RESPONDER
+    [HTTP_CONNECTION] => Keep-Alive
+    [HTTP_PRAGMA] => no-cache
+    [HTTP_CONTENT_LENGTH] => 352
+    [HTTP_CONTENT_TYPE] => text/xml
+    [HTTP_ACCEPT] => */*
+    [HTTP_HOST] => o2o.exweixin.com
+    [HTTP_USER_AGENT] => Mozilla/4.0
+    [APPL_MD_PATH] => /LM/W3SVC/8/ROOT
+    [APPL_PHYSICAL_PATH] => D:\web\o2oexweixin\web\
+    [AUTH_TYPE] => 
+    [AUTH_PASSWORD] => 
+    [AUTH_USER] => 
+    [CERT_COOKIE] => 
+    [CERT_FLAGS] => 
+    [CERT_ISSUER] => 
+    [CERT_SERIALNUMBER] => 
+    [CERT_SUBJECT] => 
+    [CONTENT_LENGTH] => 352
+    [CONTENT_TYPE] => text/xml
+    [DOCUMENT_ROOT] => D:\web\o2oexweixin\web
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [HTTPS] => off
+    [HTTPS_KEYSIZE] => 
+    [HTTPS_SECRETKEYSIZE] => 
+    [HTTPS_SERVER_ISSUER] => 
+    [HTTPS_SERVER_SUBJECT] => 
+    [INSTANCE_ID] => 8
+    [INSTANCE_NAME] => O2OEXWEIXIN
+    [INSTANCE_META_PATH] => /LM/W3SVC/8
+    [LOCAL_ADDR] => 10.143.70.183
+    [LOGON_USER] => 
+    [PATH_TRANSLATED] => D:\web\o2oexweixin\web\b2b2c\mobile\api\payment\wxpay\notify_url.php
+    [QUERY_STRING] => bank_type=2011&discount=0&fee_type=1&input_charset=UTF-8&notify_id=ey2RUywJuCv94X-n88VPV__VQmw7W9jKtXlt_Z0yK8kFBAgSyG_V0m1Dcmf1QohZZWVqMINWC_sSlyw-CsXLBMrz66TN9fWw&out_trade_no=610464298501188052&partner=1220820201&product_fee=1&sign=39713DC027DB2F183361797613EB574F&sign_type=MD5&time_end=20140917194919&total_fee=1&trade_mode=1&trade_state=0&transaction_id=1220820201201409173175223350&transport_fee=0
+    [REMOTE_ADDR] => 101.226.103.62
+    [REMOTE_HOST] => 101.226.103.62
+    [REMOTE_PORT] => 38030
+    [REMOTE_USER] => 
+    [REQUEST_METHOD] => POST
+    [REQUEST_URI] => /b2b2c/mobile/api/payment/wxpay/notify_url.php?bank_type=2011&discount=0&fee_type=1&input_charset=UTF-8&notify_id=ey2RUywJuCv94X-n88VPV__VQmw7W9jKtXlt_Z0yK8kFBAgSyG_V0m1Dcmf1QohZZWVqMINWC_sSlyw-CsXLBMrz66TN9fWw&out_trade_no=610464298501188052&partner=1220820201&product_fee=1&sign=39713DC027DB2F183361797613EB574F&sign_type=MD5&time_end=20140917194919&total_fee=1&trade_mode=1&trade_state=0&transaction_id=1220820201201409173175223350&transport_fee=0
+    [SCRIPT_FILENAME] => D:\web\o2oexweixin\web\b2b2c\mobile\api\payment\wxpay\notify_url.php
+    [SCRIPT_NAME] => /b2b2c/mobile/api/payment/wxpay/notify_url.php
+    [SERVER_NAME] => o2o.exweixin.com
+    [SERVER_PORT] => 80
+    [SERVER_PORT_SECURE] => 0
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [SERVER_SOFTWARE] => Microsoft-IIS/7.5
+    [URL] => /b2b2c/mobile/api/payment/wxpay/notify_url.php
+    [ORIG_PATH_INFO] => /b2b2c/mobile/api/payment/wxpay/notify_url.php
+    [PHP_SELF] => /b2b2c/mobile/api/payment/wxpay/notify_url.php
+    [REQUEST_TIME] => 1410962011
+)

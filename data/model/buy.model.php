@@ -405,8 +405,11 @@ class buyModel {
 
             $order_common['order_id'] = $order_id;
             $order_common['store_id'] = $store_id;
-            $order_common['order_message'] = $pay_message[$store_id];
-
+			
+			//2014-12-16 qinwei 支付留言
+            //$order_common['order_message'] = $pay_message[$store_id];
+			$order_common['order_message'] = $pay_message;
+			
             //代金券
             if (isset($voucher_list[$store_id])){
                 $order_common['voucher_price'] = $voucher_list[$store_id]['voucher_price'];

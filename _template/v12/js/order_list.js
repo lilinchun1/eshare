@@ -2,9 +2,13 @@
  * Created by 闫继鹏 on 2014/12/16.
  */
 $(function(){
-    $(".order-l-b .shopping-listing").hide();
-    $(".order-l-b .shopping-listing").first().show();
+    var leng=$(".order-list-gl").length;
+    $('.order-list-gl').find(".shopping-listing").hide();
+    for(var i=0;i<=leng;i++){
+        $('.order-list-gl').eq(i).find(".shopping-listing").first().show();
+    }
 });
+
 function drop_down(list) {
     var classes = $(list).parent().attr('class');
     if (classes == "order-dd-button1") {
