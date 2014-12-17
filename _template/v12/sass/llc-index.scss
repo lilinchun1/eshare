@@ -1150,3 +1150,16 @@
   line-height: 60px;
   color: #ffffff;
 }
+
+//红色提示
+/*simple-dialog*/
+.s-dialog-mask{position:absolute;left:0px;top:0px;background-color:rgb(20, 20, 20);filter:alpha(opacity=60);opacity: 0;width:100%;z-index:-1;}
+.s-dialog-wrapper{color:#fff;font-size:14px;position: fixed;z-index: 9999;-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);}
+.s-dialog-skin-green{background-color: #6cb248;border:1px solid #397908;}
+.s-dialog-skin-block{background-color: #000;}
+.s-dialog-skin-red{background-color: #D9434E;border:1px solid #AD0909;}
+.s-dialog-content{padding: 15px 20px;}
+.s-dialog-btn-wapper{border-top: 1px solid rgba(130,128,127,.5);display: -webkit-box;display: -moz-box;display:box;}
+.s-dialog-btn-wapper a{-moz-box-flex:1;box-flex:1;-webkit-box-flex:1;display:block; color: #fff;text-align: center;padding:10px 0px;}
+
+.no-record{border:1px solid #ccc;padding: 10px;text-align: center;}

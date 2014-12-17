@@ -38,6 +38,10 @@ input[type="checkbox"] {
   width: 12px;
   height: 12px;
   border: solid 1px #d3d3d3;
+  border-radius: 64px;
+  -webkit-border-radius:64px;
+  -moz-border-radius:64px;
+  -o-border-radius:64px;
 }
 input::-webkit-input-placeholder{
   color: #999;
@@ -45,17 +49,8 @@ input::-webkit-input-placeholder{
 input::-moz-placeholder{
   color: #999;
 }
-
-
-.min{
-  width: 100%;}
-.add-r2 {
-
-  .add-srk {
-    font-family: "microsoft yahei";
-    font-size: 1.4em;
-
-  }
+select[name="dd"]{
+  -webkit-appearance: none;
 }
 
 .bill_top{
@@ -127,9 +122,7 @@ input::-moz-placeholder{
 
   border-top: 1px solid #d3d3d3;
 }
-.cart_char li{
-  float: left;
-}
+
 .cart_char_0{
   padding: 0;
   width: 95%;
@@ -150,10 +143,6 @@ input::-moz-placeholder{
   border-top: 1px solid#d3d3d3;
 }
 
-
-.cart_char_0 li{
-  float: left;
-}
 .cart_char_1{
   margin-top: 5px;
   width: 67px;
@@ -188,6 +177,7 @@ input::-moz-placeholder{
   float: right;
   line-height:20px;
   color:#999;
+  font-size: 1.4em;
   text-align: right;}
 .cart_char_3 img{
   margin-top:19px;
@@ -206,7 +196,9 @@ input::-moz-placeholder{
   width: 26px;
   line-height: 26px;
   float: left;
-  border: 1px #999 solid;
+  border-top: 1px #999 solid;
+  border-bottom: 1px #999 solid;
+  border-left: 1px #999 solid;
   text-align: center;
 }
 .cart_char_4_1{
@@ -344,7 +336,7 @@ input::-moz-placeholder{
   line-height: 34px;
   text-align: left;
   background: #fff;
-  font-size: 1.8em;
+  font-size: 1.4em;
   border: none;
   color:#999;
   height: 55px;
@@ -433,7 +425,7 @@ input::-moz-placeholder{
 }
 /*-----------------------发票地址----------------------*/
 .cart_input{
-  font-size: 1.4em;
+
   color:$font-color666;
   line-height: 27px;
 }
@@ -695,7 +687,7 @@ input::-moz-placeholder{
     height: 90px;
   }
   .cart_input{
-    font-size:2.2em;
+
     line-height: 54px;
   }
   .shop_new{
@@ -757,7 +749,6 @@ input::-moz-placeholder{
       margin: 0px 5px;
     }
   }
-
 }
 
 .add {
@@ -802,12 +793,23 @@ input::-moz-placeholder{
 }
 .cart_char_0{
   a{
-    width: 94%;
+    width: 100%;
     line-height:34px;
     display: block;
     color:$font-color999;
+    background:url("../img/icon/right-s-line.png") 100% 50% no-repeat;
+    background-position: right;
+    overflow: hidden;
+
+  }
+}
+.cart_char{
+  a{
+    width: 100%;
+    display: block;
     background:url("../img/icon/right-s-line.png") no-repeat;
     background-position: right;
+    overflow: hidden;
 
   }
 }
@@ -815,8 +817,17 @@ input::-moz-placeholder{
 
   .sit_botton{
     font-size: 2.2em;
+    line-height: 68px;
   }
   .cart_char_0{
+    a{
+      width:100%;
+      line-height:68px;
+
+
+    }
+  }
+  .cart_char{
     a{
       width:100%;
       line-height:68px;
@@ -1015,6 +1026,7 @@ input::-moz-placeholder{
       width: 100%;
       color:#999;
       font-size: 1.4em;
+      line-height: 30px;
     }
     textarea{
       border: 1px solid $border-color;
@@ -1057,7 +1069,8 @@ input::-moz-placeholder{
       float:left;
       font-size: 1.8em;
       .add-srk{
-
+      font-size:1em;
+        line-height: 60px;
       }
 
       textarea{
@@ -1088,9 +1101,9 @@ input::-moz-placeholder{
     .add-r2{
       width: 69%;
       float:left;
-      font-size:1em;
+      font-size:1.8em;
       .add-srk{
-
+      font-size:1em;
       }
 
       textarea{
@@ -1106,6 +1119,22 @@ input::-moz-placeholder{
   }
 
 
+}
+.number{
+   padding:0 5px;
+}
+.number_1{
+  border-right: 1px #999 solid;
+}
+
+
+.right{
+  float: right;
+  display: block;
+}
+.left{
+  float: left;
+  display: block;
 }
 
 
