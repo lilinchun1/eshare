@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0; padding:0; background:#fff;font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti, Arial, Helvetica, sans-serif; color:#666666; font-size:1.8em;}
+li{list-style:none; margin:0; padding:0;}
+a{text-decoration:none; margin:0; padding:0;text-decoration:none;}
+input{margin:0; padding:0;}
+ul{margin:0; padding:0;}
+p{margin:0; padding:0;}
+
+/* 链接颜色 */
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {}
+
+.join_top{ width:94%; margin:0 auto; padding-bottom:20px; border-bottom:1px solid #d8d8d8; overflow:hidden; display:block;}
+.join_top img{ width:20%; margin:30px 0;}
+.join_top p{ width:94%; text-align:center; line-height:180%;  margin-bottom:20px; font-size:1.8em;}
+
+.join_center{width:94%; margin:0 auto; margin-top:30px;}
+.join_center_ps{ margin:40px 0px; color:#999; line-height:180%; text-align:center;}
+.join_center_gz{ text-align:center; margin:30px 0px; }
+.join_center_gz p{ height:100px; }
+.join_center_gz a{ color:#33F; line-height:200%;}
+.join_center_gz a:hover{ }
+
+.join_footer{ position:fixed; width:100%; bottom:0; }
+.join_footer p{ text-align:center; width:100%; margin:0 auto; line-height:240%; color:#999; font-size:1.8em;}
+
+
