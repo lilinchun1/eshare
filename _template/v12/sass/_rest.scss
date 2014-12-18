@@ -329,6 +329,139 @@ input[type="checkbox"]:checked {
     }
   }
 }
+/*支付弹窗*/
+.overlay{
+  display: none;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+}
+.alert-pay{
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  z-index: 10;
+  padding: 0 15px;
+  margin-left: -127px;
+  width: 224px;
+  background: #fff;
+  P{
+    padding: 25px 0 15px;
+    text-align: center;
+    font-size: 1.4em;
+    color: #000000;
+  }
+  .alert-pay-btn{
+    @extend %btn-100s;
+    margin-bottom: 14px;
+  }
+  .green{
+    background: #3cb035;
+  }
+  .orange{
+    background: #fb6c24;
+  }
+  .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 14px;
+    border: 1px solid $border-color;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 768px){
+  .alert-pay{
+    padding: 0 30px;
+    margin-left: -224px;
+    width: 448px;
+    background: #fff;
+    P{
+      padding: 50px 0 30px;
+      font-size: 2.2em;
+    }
+    .alert-pay-btn{
+      margin-bottom: 28px;
+    }
+    .close{
+      top: 10px;
+      right: 10px;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 28px;
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+  }
+}
+
+/*确认弹窗*/
+.alert-affirm{
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -94px;
+  padding: 0 14px;
+  width: 160px;
+  background: rgba(0,0,0,.6);
+  p{
+    padding: 15px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.4em;
+  }
+  .alert-affirm-logo{
+    margin: 15px auto 0 auto;
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+  .alert-affirm-btn{
+    @extend %btn-s;
+    margin-bottom: 15px;
+    width: 74px;
+  }
+  .left-btn{
+    background: $color-red;
+    float: left;
+  }
+  .right-btn{
+    background: #cfcfcf;
+    float: right;
+  }
+}
+@media screen and (min-width: 768px){
+  .alert-affirm{
+    margin-left: -188px;
+    padding: 0 28px;
+    width: 320px;
+    p{
+      padding: 30px 0;
+      font-size: 2.2em;
+    }
+    .alert-affirm-logo{
+      margin: 30px auto 0 auto;
+      width: 120px;
+      height: 120px;
+    }
+    .alert-affirm-btn{
+      margin-bottom: 30px;
+      width: 148px;
+    }
+  }
+
+}
 /*-----------------------public end----------------------*/
 
 
