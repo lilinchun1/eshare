@@ -76,6 +76,9 @@ body{
       width:45%;
       float:left;
       font-size: 1.4em;
+      p{
+        line-height: 1.5;
+      }
       span{
         color:#e02d2a;
       }
@@ -377,6 +380,9 @@ body{
 .order-b{
   border-bottom: 1px solid #d3d3d3;
   margin: 0px 10px;
+  li{
+    color: #666666;
+  }
 }
 .order-add{
   font-size: 1.4em;
@@ -1069,6 +1075,7 @@ body{
         height: 40px;
         overflow: hidden;
         line-height: 40px;
+        color: $font-color666;
       }
       p{
         color:#999;

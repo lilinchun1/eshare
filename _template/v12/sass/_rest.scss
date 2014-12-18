@@ -537,15 +537,19 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   -webkit-appearance: none;
 }
 /*-----------------------footer----------------------*/
+.fix-bottom{
+  position: fixed;
+  bottom: 0;
+}
 .footer{
   padding-bottom: 50px;
+  width: 100%;
   height: 40px;
   line-height: 40px;
   text-align: center;
   font-size: 1.2em;
   color: #a7a7a7;
   clear:both;
-
 }
 .mod-foot-nav{
   position: fixed;
