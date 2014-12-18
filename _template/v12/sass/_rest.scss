@@ -611,7 +611,8 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   left: -100%;
   opacity: 0;
   margin: 0 auto;
-  width: 318px;
+  //width: 318px;
+  width: 100%;
   height: 50px;
   .search-btn{
     @extend %btn-s;
@@ -634,8 +635,9 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   margin-top: 10px;
   margin-right: 6px;
   float: left;
+  width: 70%;
   .search-input{
-    width: 234px;
+    width: 100%;
     height: 25px;
     background-color: #535353;
     border-radius: 2px;
@@ -761,7 +763,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   }
   .search{
     margin: 0 auto;
-    width: 634px;
+    //width: 634px;
     height: 100px;
     .search-btn{
       margin-top: 20px;
@@ -784,7 +786,8 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     margin-right: 15px;
     float: left;
     .search-input{
-      width: 470px;
+     // width: 470px;
+      width: 100%;
       height: 50px;
       background-color: #535353;
       border-radius: 2px;
