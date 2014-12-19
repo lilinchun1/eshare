@@ -513,13 +513,12 @@ body{
   h4{
     background: url(../img/256-256.png) 0 10px no-repeat;
     background-size: 6%;
-    margin: 10px 10px 0px 10px;
+    margin: 0 10px 0px 10px;
     line-height: 300%;
     font-size: 1.4em;
     padding-left: 30px;
     border-bottom:1px solid #d3d3d3;
     overflow: hidden;
-    border-top:1px solid #d3d3d3;
     display: block;
     span{
       float: right;
@@ -619,9 +618,7 @@ body{
       padding-left: 35px;
       border-bottom:1px solid #d3d3d3;
       overflow: hidden;
-      border-top:1px solid #d3d3d3;
       display: block;
-      margin-top: 10px;
       span{
         float: right;
         color:#dd2f2f;
@@ -1944,3 +1941,55 @@ input[type="checkbox"]:checked {
 .s-dialog-btn-wapper a{-moz-box-flex:1;box-flex:1;-webkit-box-flex:1;display:block; color: #fff;text-align: center;padding:10px 0px;}
 
 .no-record{border:1px solid #ccc;padding: 10px;text-align: center;}
+
+/*-----------------------管理中心lv----------------------*/
+.header-photo{
+  .header-lv{
+    position: absolute;
+    top: 4px;
+    right: -14px;
+    width: 24px;
+    height: 24px;
+  }
+  .lv1{
+    background: url(../img/icon/dp_vip1.png) 0 0 no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .lv2{
+    background: url(../img/icon/dp_vip2.png) 0 0 no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .lv3{
+    background: url(../img/icon/dp_vip3.png) 0 0 no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .lv4{
+    background: url(../img/icon/dp_vip4.png) 0 0 no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .lv5{
+    background: url(../img/icon/dp_vip5.png) 0 0 no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .lv6{
+    background: url(../img/icon/dp_vip6.png) 0 0 no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-photo{
+    .header-lv{
+      position: absolute;
+      top: 14px;
+      right: -24px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
