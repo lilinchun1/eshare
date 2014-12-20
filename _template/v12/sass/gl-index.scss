@@ -2046,6 +2046,7 @@ input[type="checkbox"]:checked {
   padding: 0 14px;
   width: 160px;
   background: rgba(0,0,0,.6);*/
+  //height: 100%;
   .content{
     padding: 15px 0;
     text-align: center;
@@ -2067,7 +2068,8 @@ input[type="checkbox"]:checked {
       font-family:"microsoft yahei";
       margin: 0;
       padding: 0;
-      float: left;
+      margin-right: 5px;
+    //  float: left;
     }
     .cancel {
       background: #cfcfcf;
@@ -2076,7 +2078,7 @@ input[type="checkbox"]:checked {
       font-family:"microsoft yahei";
       margin: 0;
       padding: 0;
-      //float: right;
+      margin-left: 5px;
     }
   }
 }
