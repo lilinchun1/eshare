@@ -149,6 +149,25 @@ $(function(){
 	*/
 });
 function setAreaInfo(){
+    //check 约束   yan
+    if($("input[name='true_name']").val()==""){
+        floatNotify.simple("请输入姓名");
+        return false;
+    }
+    if($("input[name='mob_phone']").val()==""){
+        floatNotify.simple("请输入手机号码");
+        return false;
+    }
+    var num = $("input[name='mob_phone']").val();
+    var isMobile=/^(?:13\d|15\d|18\d)\d{5}(\d{3}|\*{3})$/;
+    if(!isMobile.test(num)){
+        floatNotify.simple("请输入正确的11位手机号码");
+        return false;
+    }
+    if($("#vaddress_name").val()==""||$("select[name=prov]").val()=="请选择"||$("select[name=city]").val()=="请选择"||$("select[name=region]").val()=="请选择"){
+        floatNotify.simple("请正确选择您的收货地址");
+        return false;
+    }
 	var prov_index   = $('select[name=prov]')[0].selectedIndex;
 	var city_index   = $('select[name=city]')[0].selectedIndex;
 	var region_index = $('select[name=region]')[0].selectedIndex;

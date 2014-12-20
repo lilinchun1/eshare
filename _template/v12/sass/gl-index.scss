@@ -1638,7 +1638,7 @@ input[type="checkbox"]:checked {
   clear: both;
   height: 100%;
   font-size: 1.4em;
-  line-height: 200%;
+  //line-height: 200%;
   .main-box-ms{
     position: relative;
     width: 33%;
@@ -2039,13 +2039,13 @@ input[type="checkbox"]:checked {
 
 //确认提示
 .c-float-modePop{
-  position: fixed;
+  /*position: fixed;
   top: 30%;
   left: 50%;
   margin-left: -94px;
   padding: 0 14px;
   width: 160px;
-  background: rgba(0,0,0,.6);
+  background: rgba(0,0,0,.6);*/
   .content{
     padding: 15px 0;
     text-align: center;

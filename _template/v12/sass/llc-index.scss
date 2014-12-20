@@ -112,14 +112,14 @@
     em{
       padding-left: 4px;
       color: $color-red;
-      font-size: 1.4em;
+      font-size: 1.6em;
     }
     span{
       font-size: 0.6em;
     }
     i{
       color: $font-color999;
-      font-size: 0.8em;
+      font-size: 1.4em;
       margin-left: 0px;
       font{
         text-decoration:line-through;
@@ -654,7 +654,7 @@
       color: $color-red;
     }
     i{
-      font-size: 1em;
+      font-size: 1.4em;
       color: $font-color999;
     }
   }
@@ -687,9 +687,10 @@
     float: left;
     li{
       margin: 0 5px 5px 0;
+      padding: 0 5px;
       float: left;
       position: relative;
-      width: 44px;
+      //width: 44px;
       height: 22px;
       line-height: 22px;
       border: 1px solid $border-color;
@@ -879,7 +880,8 @@
       width: 84%;
       li{
         margin: 0 10px 10px 0;
-        width: 88px;
+        padding: 0 10px;
+        //width: 88px;
         height: 44px;
         line-height: 44px;
         font-size: 2.2em;

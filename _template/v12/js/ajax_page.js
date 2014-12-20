@@ -43,6 +43,9 @@ $(window).scroll(function () {
                             "</div>" +
                             "</div>");
                 });
+                if(pageNum==pageCount){
+                    $(".add-more").html("全部加载完毕");
+                }
                 pageNum++;
             },
             error: function(e){    //失败后回调
@@ -54,7 +57,5 @@ $(window).scroll(function () {
             }
         })
     }
-    if(pageNum==pageCount){
-        $(".add-more").html("全部加载完毕");
-    }
+
 });
