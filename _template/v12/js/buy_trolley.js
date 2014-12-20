@@ -82,7 +82,7 @@ $(function() {
         }else{
             var quantity = parseInt($('#teambuy_num_input').val());
             $.ajax({
-                url:ApiUrl+"/index.php?act=member_cart&op=cart_add",
+                url:"index.php?act=member_cart&op=cart_add",
                 data:{key:key,goods_id:goods_id,quantity:quantity},
                 type:"post",
                 success:function (result){

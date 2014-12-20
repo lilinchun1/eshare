@@ -1,5 +1,5 @@
 var SiteUrl = "http://localhost/eshare";
-var ApiUrl = "http://localhost/eshare/wap";
+var ApiUrl = "http://localhost/eshare/mobile";
 var WapApiUrl = "http://localhost/eshare/wap";
 var pagesize = 10;
 var WapSiteUrl = "http://localhost/eshare/wap";
