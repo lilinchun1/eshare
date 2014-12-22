@@ -2971,7 +2971,7 @@ li {
   a{
     color:#fff;
   }
-  padding: 5px 0;
+  padding: 12px 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -3532,7 +3532,7 @@ min-height: 300px;
 }
 .contact-us-item{
   margin: 10px 0;
-
+  padding-bottom: 10px;
   @include item-wrap-mod($bg-normal,$bd-color-f3);
     p{
       margin: 0 auto;
