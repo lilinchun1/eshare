@@ -920,7 +920,7 @@ li {
       float: left;
     }
   }
-  .head-shop-tt span img{ width: 30px; margin: 0px 2px;}
+  .head-shop-tt span img{ width: 23px; margin: 0px 2px;}
   .shop-level {
     padding: 0 3px;
     margin-top: 0;
@@ -951,8 +951,8 @@ li {
   @extend %show-wrap;
   width: 96%;
   li {
-    height: 32px;
-    line-height: 32px;
+    height: 42px;
+    line-height: 42px;
     font-size: 1.4em;
     color: $font-color-666;
     border-bottom: 1px solid $bd-color-f3;
@@ -969,6 +969,7 @@ li {
 @media screen and (min-width: 768px) {
 
   .management-head {
+    .head-shop-tt span img{ width: 42px; margin: 0px 2px;}
     .pic-wrap {
       border-width: 3px;
       box-shadow: 1px 2px 3px #bebebe;
@@ -990,8 +991,8 @@ li {
   }
   .management-list {
     li {
-      height: 64px;
-      line-height: 64px;
+      height: 88px;
+      line-height: 88px;
       font-size: 2em;
     }
   }
