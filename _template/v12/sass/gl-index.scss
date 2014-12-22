@@ -1493,7 +1493,7 @@ input[type="checkbox"]:checked {
     position:absolute;
     left: 38%;
     right: 35%;
-    z-index: 999;
+    //z-index: 999;
     width: 70px;
     margin-top: 50px;
     text-align: center;
@@ -1689,7 +1689,10 @@ input[type="checkbox"]:checked {
       background: #58b5e1;
     }
     .main-box-ms6{
-      background: #bababa;
+      //background: #bababa;
+      background: url(../img/400.gif) 0 0 no-repeat;
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
     }
   }
 
@@ -1988,7 +1991,7 @@ input[type="checkbox"]:checked {
 .header-photo{
   .header-lv{
     position: absolute;
-    z-index: 9;
+    //z-index: 9;
     top: -6px;
     right: -18px;
     width: 35px;
