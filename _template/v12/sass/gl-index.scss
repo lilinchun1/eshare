@@ -1559,7 +1559,7 @@ input[type="checkbox"]:checked {
       position:absolute;
       left: 42%;
       right: 35%;
-      z-index: 999;
+      //z-index: 999;
       width: 140px;
       margin-top: 100px;
 
@@ -1988,8 +1988,9 @@ input[type="checkbox"]:checked {
 .header-photo{
   .header-lv{
     position: absolute;
+    z-index: 9;
     top: 4px;
-    right: -18px;
+    right: -22px;
     width: 35px;
     height: 35px;
   }
