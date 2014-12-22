@@ -213,8 +213,9 @@ button.disable{
 }
 
 %show-wrap {
+  width: 96%;
   //width: 93.75%;
-  width: 100%;
+  //width: 100%;
   overflow: hidden;
 }
 
@@ -2071,12 +2072,9 @@ li {
           overflow: hidden;
         }
         p {
-          margin-top:5px;
           color: $font-color-666;
-          //font-size: 1.4em;
-          line-height:140%;
+          font-size: 1.4em;
           display: block;
-          height:50%;
         }
         i{
           color: $font-normal-999;
@@ -2392,10 +2390,14 @@ li {
   background: #fff;
   border-top: 1px solid $border-color;
   li{
+    width: 96%;
     height: auto;
     //background: url(../img/icon/right-s-line1.png) no-repeat;
     h3{
-      width: 78%;
+      width: 70%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
   .shop-list-item-info {
@@ -3407,8 +3409,10 @@ li {
 }
 .message-wrap{
   padding-bottom: 0;
+  padding-top: 0;
 }
 .message-list{
+  margin-top: 0;
   margin-bottom: 0;
     li{
       margin: 0 auto;
@@ -3460,6 +3464,7 @@ li {
 .show-wrap{
   margin: 0 auto;
   @extend %show-wrap;
+  width: 96%;
     h1{
       margin: 0 auto;
       width: 80%;
