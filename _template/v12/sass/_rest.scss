@@ -289,18 +289,18 @@ input[type="checkbox"]:checked {
   background-image: image-url("icon/alert.png");
   background-repeat: no-repeat;
   background-position: 2% 50%;
-  background-size: 22px auto;
+  background-size: 38px auto;
   p {
     margin: 0 auto;
     padding:0;
-    width: 69%;
-    font-size: 1em;
+    width: 70%;
+    font-size: 1.4em;
   }
   .close {
     position: absolute;
     top: -2px;
     right: 10px;
-    font-size: 2em;
+    font-size: 3em;
   }
 }
 @media screen and (min-width: 768px){
