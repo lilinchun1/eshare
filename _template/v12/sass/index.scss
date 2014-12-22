@@ -3413,6 +3413,7 @@ li {
     li{
       margin: 0 auto;
       @extend %show-wrap;
+      width: 96%;
       overflow: hidden;
         /*&:nth-of-type(1) {
           .message-date{
