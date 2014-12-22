@@ -1689,15 +1689,74 @@ input[type="checkbox"]:checked {
       background: #58b5e1;
     }
     .main-box-ms6{
-      //background: #bababa;
-      background: url(../img/400.gif) 0 0 no-repeat;
+      //background: #fdb747;
+      background: url(../img/400.png) 0 0 no-repeat;
       -webkit-background-size: 100% auto;
       background-size: 100% auto;
+      -webkit-animation: huxi 2s ease;
+      -o-animation: huxi 2s ease;
+      animation: huxi 2s ease;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
     }
   }
 
 }
 
+@keyframes huxi {
+  0% {
+    box-shadow: 0 0 9px #fff;
+    -webkit-box-shadow: 0 0 9px #fff;
+  }
+  20% {
+    box-shadow: 0 0 9px #94ce68;
+    -webkit-box-shadow: 0 0 9px #94ce68;
+  }
+  40% {
+    box-shadow: 0 0 18px #fdb747;
+    -webkit-box-shadow: 0 0 18px #fdb747;
+  }
+  60% {
+    box-shadow: 0 0 9px #94ce68;
+    -webkit-box-shadow: 0 0 9px #94ce68;
+  }
+  80% {
+    box-shadow: 0 0 9px #58b5e1;
+    -webkit-box-shadow: 0 0 9px #58b5e1;
+  }
+  100% {
+    box-shadow: 0 0 9px #fa6569;
+    -webkit-box-shadow: 0 0 9px #fa6569;
+  }
+}
+@-webkit-keyframes huxi {
+  0% {
+    box-shadow: 0 0 9px #bb69e6;
+    -webkit-box-shadow: 0 0 9px #bb69e6;
+  }
+  20% {
+    box-shadow: 0 0 9px #94ce68;
+    -webkit-box-shadow: 0 0 9px #94ce68;
+  }
+  40% {
+    box-shadow: 0 0 18px #fdb747;
+    -webkit-box-shadow: 0 0 18px #fdb747;
+  }
+  60% {
+    box-shadow: 0 0 9px #94ce68;
+    -webkit-box-shadow: 0 0 9px #94ce68;
+  }
+  80% {
+    box-shadow: 0 0 9px #58b5e1;
+    -webkit-box-shadow: 0 0 9px #58b5e1;
+  }
+  100% {
+    box-shadow: 0 0 9px #fa6569;
+    -webkit-box-shadow: 0 0 9px #fa6569;
+  }
+}
 @media screen and (min-width: 768px){
   .main-box{
     margin:3% 3%;
