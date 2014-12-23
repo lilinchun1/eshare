@@ -843,11 +843,11 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   z-index: 9;
   right: 0;
   top: 50%;
-  width: 32px;
+  width: 42px;
   div{
-    margin-bottom: 2px;
-    width: 32px;
-    height: 32px;
+    margin-bottom: 4px;
+    width: 42px;
+    height: 42px;
     background-color: rgba(0,0,0,0.6) ;
     /*&:nth-of-type(1){
       background: rgba(0,0,0,0.6) url(../img/iconfont-93.png) center center no-repeat;
@@ -866,9 +866,9 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     }*/
   }
   .aside-item-icon{
-    margin: 6px 0 0 6px;
-    width: 22px;
-    height: 22px;
+    margin: 5px 0 0 6px;
+    width: 32px;
+    height: 32px;
     fill: #fff;
   }
 }
