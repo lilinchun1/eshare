@@ -912,7 +912,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 
 /*-----------------------loading begin----------------------*/
 .loading{
-  position: absolute;
+  position: fixed;
   top: 38%;
   left: 50%;
   margin-left: -40px;
