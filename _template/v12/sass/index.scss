@@ -3530,8 +3530,8 @@ li {
 }
 .my-team-list-none{
 min-height: 300px;
-  background: #fff image-url("icon2/team-list-none.png") 50% 50% no-repeat;
-  background-size: 42px auto;
+  background: #fff image-url("team-none.png") 50% 50% no-repeat;
+  background-size: 85px auto;
 }
 .contact-us-wrap{
 
@@ -3597,8 +3597,7 @@ min-height: 300px;
 @media screen and (min-width: 768px) {
   .my-team-list-none{
     min-height: 300px;
-    background: #fff image-url("icon2_2x/team-list-none.png") 50% 50% no-repeat;
-    background-size: 83px auto;
+    background-size: 170px auto;
   }
 
   /**ipad 按钮文字大小 **/
