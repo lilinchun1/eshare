@@ -716,7 +716,8 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     }
   }
   span{
-    right: 0;}
+    right: 0;
+  }
   .show-foot-nav-btn{
     @extend %btn-s;
     margin: 0 auto;
@@ -830,6 +831,9 @@ input[type="button"], input[type="submit"], input[type="reset"] {
         width: 35%;
         margin-top: 24px;
       }
+    }
+    span{
+      right: 20px;
     }
   }
 
