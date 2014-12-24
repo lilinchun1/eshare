@@ -58,10 +58,14 @@ function my_fav(fav_type,fav_id,list){
             success: function (fdata) {   //成功后回调
                 if(fdata==0) {
                     floatNotify.simple("取消收藏成功");
-                    $(list).parent(".collection-box-dp").remove();
-                    $(".favorites_agent_num").text(parseInt($(".favorites_agent_num").text())-1);
+                    $(list).parent("li").remove();
+                    if(fav_type=="agent") {
+                        $(".favorites_agent_num").text(parseInt($(".favorites_agent_num").text()) - 1);
+                    }else{
+                        $(".favorites_goods_num").text(parseInt($(".favorites_goods_num").text()) - 1);
+                    }
                     if($(".collection-box-dp").length==0){
-                        history.go(0);
+                        document.URL=location.href;
                     }
                 }else{
                     floatNotify.simple(fdata);

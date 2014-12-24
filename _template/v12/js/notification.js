@@ -2,7 +2,7 @@
 
 $(function(){
 	if(!$("#J_loading").length){
-		$('<div id="J_loading" class="mp_loading"style="display:none;"><div class="mp_loading_clip"><div class="mp_loading_bar"></div></div><div class="loading-wz">\u8bf7\u7a0d\u540e...</div></div>').prependTo("body");
+		$('<div class="loading" id="J_loading" style="display: none;z-index: 9999"><div class="load-gif"><img src="'+htmlUrl+'/v12/img/load.gif" alt=""/></div><p>正在加载...</p></div>').prependTo("body");
 	}
 	$(document).on("ajaxBeforeSend",function(e,xhr,options){
 		$("#J_loading").show();

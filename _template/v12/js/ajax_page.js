@@ -1,8 +1,8 @@
 /**
  * Created by 闫继鹏 on 2014/12/15.
  */
-var pageNum=1;
-var pageCount=1;
+var pageNum=2;
+var pageCount=2;
 $(window).scroll(function () {
     var scrollTop = $(this).scrollTop();
     var scrollHeight = $(document).height();
@@ -13,10 +13,15 @@ $(window).scroll(function () {
             url: ajax_url,
             dataType: "json",
             type: 'get',
+            async:false,
             data:{'pageNum':pageNum},
             success: function (data) {   //成功后回调
                 var goods_list=data['goods_list'];
                 var agent_id=data['agent_id'];
+                if(goods_list==null){
+                    $(".add-more").html("全部加载完毕");
+                    return false;
+                }
                 $.each(goods_list, function (key, val) {
                     pageCount =val['pageCount'];//总页数
                     var image_url=val['goods_image_url'];//图片地址
@@ -52,8 +57,7 @@ $(window).scroll(function () {
                 floatNotify.simple("请求有误，请稍后重试");
             },
             beforeSend: function(){
-                $(".check-more-btn").hide();
-                $(".add-more").show();
+                $(".add-more").html('<img src="'+htmlUrl+'/v12/img/load.gif" alt="" class="add-gif"/>正在加载...');
             }
         })
     }

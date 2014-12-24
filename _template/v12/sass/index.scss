@@ -299,7 +299,8 @@ button{
   -moz-appearance: none;
   appearance: none;
 }
-input[type="text"]{
+input[type="text"],
+input[type="tel"]{
   outline: 0 none;
   -webkit-tap-highlight-color: transparent;/*ios私有*/
   -webkit-appearance: none;

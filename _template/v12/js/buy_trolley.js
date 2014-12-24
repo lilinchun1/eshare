@@ -89,6 +89,7 @@ $(function() {
                     var rData = $.parseJSON(result);
                     if(checklogin(rData.login)){
                         if(!rData.datas.error){
+                        	/*
                             $.sDialog({
                                 skin:"block",
                                 content:"添加购物车成功！",
@@ -99,6 +100,7 @@ $(function() {
                                     window.location.href = WapSiteUrl+'/index.php?act=member_cart&op=cart_list';
                                 }
                             });
+                            */
                             tipsBox($.extend({
                                 str: "+"+quantity
                             }));

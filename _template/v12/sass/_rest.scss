@@ -127,7 +127,8 @@ button.disable{
 }
 
 /*input输入框*/
-input[type="text"]{
+input[type="text"],
+input[type="tel"]{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
