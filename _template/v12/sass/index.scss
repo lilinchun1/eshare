@@ -4322,3 +4322,62 @@ min-height: 300px;
   }
 }
 /*-----------------------aside-item end----------------------*/
+/*-----------------------loading begin----------------------*/
+.loading{
+  position: fixed;
+  top: 38%;
+  left: 50%;
+  margin-left: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.8);
+  font-size: 1em;
+  p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    color: #ffffff;
+  }
+  .load-gif{
+    margin-left: -15px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 14px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+  }
+}
+.add-gif{
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+@media screen and (min-width: 768px){
+  .loading{
+    top: 76px;
+    left: 50%;
+    margin-left: -80px;
+    width: 160px;
+    height: 160px;
+    font-size: 2em;
+    p{
+      margin-top: 25px;
+    }
+    .load-gif{
+      margin-left: -30px;
+      margin-bottom: 40px;
+      position: relative;
+      top: 28px;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .add-gif{
+    width: 44px;
+    height: 44px;
+  }
+}
+/*-----------------------loading end----------------------*/
