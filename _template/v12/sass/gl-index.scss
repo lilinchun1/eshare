@@ -1491,9 +1491,9 @@ input[type="checkbox"]:checked {
 
   .header-photo{
     position:absolute;
-    left: 38%;
-    right: 35%;
+    left: 50%;
     //z-index: 999;
+    margin-left: -35px;
     width: 70px;
     margin-top: 50px;
     text-align: center;
@@ -1557,12 +1557,10 @@ input[type="checkbox"]:checked {
 
     .header-photo{
       position:absolute;
-      left: 42%;
-      right: 35%;
       //z-index: 999;
       width: 140px;
       margin-top: 100px;
-
+      margin-left: -70px;
       height: 140px;
       border-radius: 140px;
       -webkit-border-radius:140px;
