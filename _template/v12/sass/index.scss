@@ -4354,30 +4354,5 @@ min-height: 300px;
   height: 22px;
   vertical-align: middle;
 }
-@media screen and (min-width: 768px){
-  .loading{
-    top: 76px;
-    left: 50%;
-    margin-left: -80px;
-    width: 160px;
-    height: 160px;
-    font-size: 2em;
-    p{
-      margin-top: 25px;
-    }
-    .load-gif{
-      margin-left: -30px;
-      margin-bottom: 40px;
-      position: relative;
-      top: 28px;
-      left: 50%;
-      width: 60px;
-      height: 60px;
-    }
-  }
-  .add-gif{
-    width: 44px;
-    height: 44px;
-  }
-}
+
 /*-----------------------loading end----------------------*/
