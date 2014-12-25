@@ -89,7 +89,7 @@ select[name="dd"]{
 .bill_1_img{
   margin-top:20px;
   margin-right:12px;
-  width:15px;
+  width:24px;
 }
 .bill_1_button{
   @extend %btn-100s;
@@ -838,7 +838,7 @@ select[name="dd"]{
 }
 .yixiang{
   position: fixed;bottom: 60px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
   width: 100%;
 }
