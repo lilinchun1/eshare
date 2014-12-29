@@ -100,5 +100,6 @@ window.onload=function(){
 	if(isWeiXin() == false){
 		//alert('请在微信中打开链接^-^');
 		//window.location.href ="http://o2o.exweixin.com/weka/wap/404.php?err_msg=" + encodeURIComponent("请在微信中打开链接") + "&get_href=1";
+		window.location.href = SiteUrl+"/wap/404.php?err_msg=" + encodeURIComponent("请在微信中打开链接") + "&get_href=1";
 	}
 }

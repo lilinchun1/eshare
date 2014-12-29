@@ -42,7 +42,7 @@ $(window).scroll(function () {
                             "<div class='shop-item-buy'>" +
                             "<em><span>￥</span>"+goods_price+"</em>" +
                             "<i>原价：￥"+goods_marketprice+"</i>" +
-                            "<a href='"+WapSiteUrl+"/tmpl/order/buy_step1.html?goods_id="+goods_id+"&buynum=1'>"+
+                            "<a href='"+WapSiteUrl+"/index.php?act=product&goods_id="+goods_id+"&agent_id="+agent_id+"'>"+
                             "<button class='shop-item-btn'>立即购买</button>" +
                             "</a>"+
                             "</div>" +

@@ -150,7 +150,7 @@ $(function(){
 });
 function setAreaInfo(){
     //check 约束   yan
-    if($("input[name='true_name']").val()==""){
+    if($("input[name='true_name']").val()==""||$("input[name='true_name']").val()=="undefined"){
         floatNotify.simple("请输入姓名");
         return false;
     }
@@ -164,7 +164,7 @@ function setAreaInfo(){
         floatNotify.simple("请输入正确的11位手机号码");
         return false;
     }
-    if($("#vaddress_name").val()==""||$("select[name=prov]").val()=="请选择"||$("select[name=city]").val()=="请选择"||$("select[name=region]").val()=="请选择"){
+    if($("textarea[name=address]").val()==""||$("textarea[name=address]").val()=="undefined"||$("select[name=prov]").val()=="请选择"||$("select[name=city]").val()=="请选择"||$("select[name=region]").val()=="请选择"){
         floatNotify.simple("请正确选择您的收货地址");
         return false;
     }
