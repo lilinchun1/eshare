@@ -626,7 +626,7 @@ li {
   width: 93.75%;
   height: 36px;
   line-height: 36px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
   clear: both;
   color: #999;
@@ -3227,21 +3227,33 @@ li {
     span {
       margin: 8px 12px 0 10px;
       float: left;
-      @include responsive-sprite(icon_2x, $icon_2x, personal_icon1);
+      width: 20px;
+      height: 20px;
+      background: url(../img/icon/personal_icon1.png) 0 0 no-repeat;
+      -webkit-background-size: 20px auto;
+      background-size: 20px auto;
     }
   }
   .div-p-2{
     span{
       margin: 8px 12px 0 10px;
+      width: 20px;
+      height: 20px;
       float: left;
-      @include responsive-sprite(icon_2x, $icon_2x, personal_icon3);
+      background: url(../img/icon/personal_icon2.png) 0 0 no-repeat;
+      -webkit-background-size: 20px auto;
+      background-size: 20px auto;
     }
   }
   .div-p-3{
     span{
       margin: 8px 12px 0 10px;
+      width: 20px;
+      height: 20px;
       float: left;
-      @include responsive-sprite(icon_2x, $icon_2x, personal_icon2);
+      background: url(../img/icon/personal_icon3.png) 0 0 no-repeat;
+      -webkit-background-size: 20px auto;
+      background-size: 20px auto;
     }
     .icome1-p{
       border-bottom: 0 none;}
@@ -3353,24 +3365,36 @@ li {
       line-height:240%;
       span {
         margin: 16px 12px 0 0;
+        width: 40px;
+        height: 40px;
         float: left;
-        @include responsive-sprite(icon, $icon, personal_icon1);
+        background: url(../img/icon/personal_icon1.png) 0 0 no-repeat;
+        -webkit-background-size: 40px auto;
+        background-size: 40px auto;
       }
     }
     .div-p-2{
       line-height:240%;
       span{
         margin: 16px 12px 0 0;
+        width: 40px;
+        height: 40px;
         float: left;
-        @include responsive-sprite(icon, $icon, personal_icon3);
+        background: url(../img/icon/personal_icon2.png) 0 0 no-repeat;
+        -webkit-background-size: 40px auto;
+        background-size: 40px auto;
       }
     }
     .div-p-3{
       line-height:240%;
       span{
         margin: 16px 12px 0 0;
+        width: 40px;
+        height: 40px;
         float: left;
-        @include responsive-sprite(icon, $icon, personal_icon2);
+        background: url(../img/icon/personal_icon3.png) 0 0 no-repeat;
+        -webkit-background-size: 40px auto;
+        background-size: 40px auto;
       }
     }
       .icome2{
