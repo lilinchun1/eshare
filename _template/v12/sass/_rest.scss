@@ -710,7 +710,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
     }
     &:nth-of-type(3){
       width: 70%;
-      margin-top: 12px;
+      margin-top: 8px;
     }
 
   }
@@ -720,10 +720,11 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   .show-foot-nav-btn{
     @extend %btn-s;
     margin: 0 auto;
-    width: 95%;
-    height: 34px;
+    width: 90%;
+    height: 36px;
     background: $color-red;
     font-size: 1.2em;
+    display: block;
   }
   .color-yellow{
     background-color: #ff8522;
