@@ -1691,7 +1691,7 @@ input[type="checkbox"]:checked {
     .main-box-ms6{
       //background: #fdb747;
       //background: url(../img/400-2.gif) 0 0 no-repeat;
-      background: url(../img/400-3.gif) 0 0 no-repeat;
+      background: url(../img/400-3.png) 0 0 no-repeat;
       -webkit-background-size: 100% auto;
       background-size: 100% auto;
       /*-webkit-animation: huxi 2s ease;
@@ -1701,6 +1701,16 @@ input[type="checkbox"]:checked {
       -webkit-animation-fill-mode: forwards;
       animation-iteration-count: infinite;
       -webkit-animation-iteration-count: infinite;*/
+    }
+    .main-box-ms7{
+      background: url(../img/400-4.gif) 0 0 no-repeat;
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
+    }
+    .main-box-ms8{
+      background: url(../img/400-5.png) 0 0 no-repeat;
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
     }
   }
 
